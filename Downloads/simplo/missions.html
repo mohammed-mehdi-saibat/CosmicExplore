@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Missions SpaceX - Exploration Spatiale</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <nav class="navbar">
+    <div class="logo">🚀 SpaceX </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="missions.html" class="active">Missions</a></li>
+      <li><a href="technologies.html">Technologies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <!-- <li><a href="singin.html">SIGN IN</a></li> -->
+
+    </ul>
+    <div class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <h1>ABOUT US</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas eum animi impedit nulla, enim aliquid blanditiis sequi commodi eaque dolor ullam ratione voluptates veniam esse, consequuntur beatae quia pariatur.</p>
+    </div>
+  </section>  
+  <section class="page-header">
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <h1>Nos Missions</h1>
+      <p>Découvrez les missions emblématiques qui repoussent les limites de l'exploration spatiale</p>
+    </div>
+  </section>
+
+  <section class="section" id="missions-grid">
+    
+      <div class="mission-card" id="starlink">
+        <div class="mission-image">
+          <img src="https://sxcontent9668.azureedge.us/cms-assets/assets/20251007_Starlink_10_59_Streak_DSC_00975_31a83c61e9.jpg" alt="Starlink">
+        </div>
+        <div class="mission-content">
+          <h3>Starlink</h3>
+          <div class="mission-meta">
+            <span class="mission-status active">En déploiement</span>
+            <span class="mission-launches">4000+ satellites</span>
+          </div>
+          <p>Constellation de satellites fournissant un internet haut débit à travers le monde, même dans les zones reculées.</p>
+          <ul class="mission-res">
+            <li>Couverture mondiale</li>
+            <li>Latence réduite</li>
+            <li>Débit élevé</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mission-card" id="gps">
+        <div class="mission-image">
+          <img src="https://sxcontent9668.azureedge.us/cms-assets/assets/GPS_III_7_pad39a_DSC_3066_desktop_d42e3b3aa1.jpg" alt="GPS Mission">
+        </div>
+        <div class="mission-content">
+          <h3>GPS III-7</h3>
+          <div class="mission-meta">
+          </div>
+          <p>Lancement du satellite GPS III-7 pour le compte de la Space Force américaine, améliorant la précision du système de positionnement global.</p>
+          <ul class="mission-res">
+            <li>Précision améliorée</li>
+            <li>Résistance aux brouillages</li>
+            <li>Durée de vie étendue</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mission-card" id="imap">
+        <div class="mission-image">
+          <img src="https://sxcontent9668.azureedge.us/cms-assets/assets/IMAP_Wpondh_IMG_8198_desktop_44e34d4bf6.jpg" alt="IMAP Mission">
+        </div>
+        <div class="mission-content">
+          <h3>IMAP</h3>
+          <div class="mission-meta">
+          </div>
+          <p>Mission dédiée à l'étude des interactions entre le vent solaire et le milieu interstellaire.</p>
+          <ul class="mission-res">
+            <li>Recherche héliophysique</li>
+            <li>Instruments avancés</li>
+            <li>Collaboration NASA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+    <div class="footer-bottom">
+      <p>© 2025 SpaceX Exploration — Projet Éducatif | Site créé dans un but pédagogique</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileMenuBtn.classList.toggle('active');
+    });
+
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>

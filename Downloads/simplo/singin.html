@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription - SpaceX Exploration</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">🚀 SpaceX </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="missions.html">Missions</a></li>
+      <li><a href="technologies.html">Technologies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signin.html" class="active">S'inscrire</a></li>
+    </ul>
+    <div class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <h1>Rejoignez Notre Communauté</h1>
+      <p>Inscrivez-vous pour suivre l'actualité spatiale</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact-form">
+    <div class="contact-container">
+      <div class="form-container">
+        <form class="contact-form" id="communityForm">
+          <h3>Créer un Compte</h3>
+          
+          <div class="form-group">
+            <label for="name">Nom Complet </label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom complet">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adresse Email </label>
+            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+212 0 00 00 00 01">
+          </div>
+
+          <div class="form-group">
+            <label for="country">Pays</label>
+            <select id="country" name="country">
+              <option value="">Sélectionnez votre pays</option>
+              <option value="maroc">Maroc</option>
+              <option value="algerie">Algérie</option>
+              <option value="tunisie">Tunisie</option>
+              <option value="france">France</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">S'inscrire</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>© 2025 SpaceX Exploration — Projet Éducatif</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileMenuBtn.classList.toggle('active');
+    });
+
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>
