@@ -8,11 +8,24 @@ body {
     color: #FFFFFF;
 }
 
-/* Tutorials Section: */
-.tutorials h1 {
+/* content */
+
+.arabi-h1 {
     font-size: 48px;
     font-weight: 600;
 }
+.arabi-h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.arabi-p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #8D8D8D;
+}
+
+/* Tutorials Section: */
 
 .tutorials .tuto-cards {
     display: flex;
@@ -34,8 +47,7 @@ body {
 }
 
 .tutocard .tuto-image {
-    width: 326px;
-
+    width: 87%;
 }
 
 .tuto-image img {
@@ -44,18 +56,7 @@ body {
 }
 
 .tutocard .tuto-content {
-    width: 326px;
-}
-
-.tuto-content h3 {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.tuto-content p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #8D8D8D;
+    width: 87%;
 }
 
 .tuto-content button {
@@ -66,4 +67,23 @@ body {
     border: 2px solid #AAAAAA;
     border-radius: 16px;
     padding: 10px 20px;
+}
+
+.tuto-content button:hover {
+    transform: scale(1.05);
+    background: #1a1a1a;
+}
+
+
+@media (max-width: 600px) {
+.arabi-h1 {
+    font-size: 28px;
+}
+.arabi-h3 {
+    font-size: 20px;
+}
+
+.arabi-p {
+    font-size: 16px;
+}
 }
