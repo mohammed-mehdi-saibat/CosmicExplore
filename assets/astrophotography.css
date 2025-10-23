@@ -76,15 +76,12 @@ body {
 }
 
 /* skywatching section */
-.skywatching {}
-
 .skywatching-cards {
-    margin: auto 0 auto 10px;
     display: flex;
     justify-content: center;
-    column-gap: 60px;
-    row-gap: 20px;
     flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 20px;
 }
 
 .skywatching-cards .skywatching-card {
@@ -92,7 +89,7 @@ body {
     min-width: 375px;
     max-width: 615px;
     min-height: 264px;
-    flex: 1;
+    flex: 1 1 50%;
     border: 2.34px solid #474747;
     border-radius: 24px;
     overflow: hidden;
@@ -118,7 +115,6 @@ body {
 
 
 .skywatching-content .skywatching-tag {
-    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
