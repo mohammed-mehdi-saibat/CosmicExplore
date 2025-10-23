@@ -227,7 +227,7 @@ body {
 
 
 /* === RESPONSIVE === */
-@media (max-width: 412px) {
+@media (max-width: 768px) {
     .nav-links {
         display: none;
     }
