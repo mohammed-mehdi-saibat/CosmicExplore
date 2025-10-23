@@ -1,6 +1,5 @@
 /* Home page */
 /* Global variables */
-
 :root {
     --main-color: #020305;
     --secondary-color: linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%);
@@ -56,10 +55,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    
 }
 
 /* === NAVBAR === */
@@ -197,6 +192,7 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
+/* === hero-section === */
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -248,3 +244,4 @@ body {
         font-size: var(--mobile-body);
     }
 }
+
