@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Main css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Render All elements normally -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Onset font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <!-- === JS TOGGLE === -->
+</head>
+
+
+
+
+
+<body>
+    <!-- === NAVBAR === -->
+    <header class="navbar">
+        <div class="logo"><img src="./images/Home/Header/Cosmic explore logo.png" alt="logo"></div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="Astrophotography.html">Astrophotography</a>
+            <a href="astronomicalNewsEvents.html">Astronomical News </a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="#">Community</a>
+            <a href="missions.html">Missions</a>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <!-- === SIDEBAR=== -->
+    <div class="sidebar">
+        <span class="close-btn">&times;</span>
+        <a href="#">Home</a>
+        <a href="Astrophotography.html">Astrophotography</a>
+        <a href="astronomicalNewsEvents.html">Astronomical News </a>
+        <a href="#">Catalogue</a>
+        <a href="#">Community</a>
+        <a href="#">Missions</a>
+    </div>
+    <!-- main -->
+    <main>
+
+
+
+
+    </main>
+    <!-- header -->
+    <header>
+
+
+    </header>
+
+    <!-- === JS TOGGLE === -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const sidebar = document.querySelector(".sidebar");
+        const closeBtn = document.querySelector(".close-btn");
+
+        // Open sidebar
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            sidebar.classList.add("active");
+        });
+
+        // Close sidebar
+        closeBtn.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            sidebar.classList.remove("active");
+        });
+
+        // Optional: close sidebar when clicking a link
+        document.querySelectorAll(".sidebar a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                sidebar.classList.remove("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
