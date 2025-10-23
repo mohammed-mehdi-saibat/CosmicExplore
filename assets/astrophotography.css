@@ -14,6 +14,7 @@ body {
     font-size: 48px;
     font-weight: 600;
 }
+
 .arabi-h3 {
     font-size: 24px;
     font-weight: 600;
@@ -74,16 +75,19 @@ body {
     background: #1a1a1a;
 }
 
+/* skywatching section */
+
 
 @media (max-width: 600px) {
-.arabi-h1 {
-    font-size: 28px;
-}
-.arabi-h3 {
-    font-size: 20px;
-}
+    .arabi-h1 {
+        font-size: 28px;
+    }
 
-.arabi-p {
-    font-size: 16px;
-}
+    .arabi-h3 {
+        font-size: 20px;
+    }
+
+    .arabi-p {
+        font-size: 16px;
+    }
 }
