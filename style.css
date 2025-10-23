@@ -2,249 +2,250 @@
 /* Global variables */
 
 :root {
-    --main-color: #020305;
-    --secondary-color: linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%);
-    --background-color: #020305;
-    --font-family: "Onest", sans-serif;
-    --heading-size: 2rem;
+  --main-color: #020305;
+  --secondary-color: linear-gradient(
+    180deg,
+    #595ec1 5%,
+    #353983 45%,
+    #25286c 100%
+  );
+  --background-color: #020305;
+  --font-family: "Onest", sans-serif;
+  --heading-size: 2rem;
 
-    /* === Font Family === */
-    --font-family-base: "Onest", sans-serif;
+  /* === Font Family === */
+  --font-family-base: "Onest", sans-serif;
 
-    /* === Desktop Typography === */
-    --desktop-h1: 4rem;
-    /* Main hero title */
-    --desktop-h2: 3rem;
-    /* Section title */
-    --desktop-h3: 2rem;
-    /* Subsection title */
-    --desktop-h4: 1.5rem;
-    /* Small heading */
-    --desktop-h5: 1.25rem;
-    /* Mini heading / label */
-    --desktop-body: 1rem;
-    /* Paragraphs */
-    --desktop-small: 0.875rem;
-    /* Small text / footer */
+  /* === Desktop Typography === */
+  --desktop-h1: 4rem;
+  /* Main hero title */
+  --desktop-h2: 3rem;
+  /* Section title */
+  --desktop-h3: 2rem;
+  /* Subsection title */
+  --desktop-h4: 1.5rem;
+  /* Small heading */
+  --desktop-h5: 1.25rem;
+  /* Mini heading / label */
+  --desktop-body: 1rem;
+  /* Paragraphs */
+  --desktop-small: 0.875rem;
+  /* Small text / footer */
 
-    /* === Mobile Typography === */
-    --mobile-h1: 2.5rem;
-    --mobile-h2: 2rem;
-    --mobile-h3: 1.5rem;
-    --mobile-h4: 1.25rem;
-    --mobile-h5: 1.125rem;
-    --mobile-body: 0.95rem;
-    --mobile-small: 0.8rem;
+  /* === Mobile Typography === */
+  --mobile-h1: 2.5rem;
+  --mobile-h2: 2rem;
+  --mobile-h3: 1.5rem;
+  --mobile-h4: 1.25rem;
+  --mobile-h5: 1.125rem;
+  --mobile-body: 0.95rem;
+  --mobile-small: 0.8rem;
 
-    /* === Font Weights === */
-    --font-light: 300;
-    --font-regular: 400;
-    --font-medium: 500;
-    --font-semibold: 600;
-    --font-bold: 700;
+  /* === Font Weights === */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
 }
 
 body {
-    background-color: var(--background-color);
-    font-family: var(--font-family-base);
-    color: var(--text-light);
-    overflow-x: hidden;
+  background-color: var(--background-color);
+  font-family: var(--font-family-base);
+  color: var(--text-light);
+  overflow-x: hidden;
 }
 
 /* === BASE === */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* === NAVBAR === */
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--background-color);
-    position: fixed;
-    height: 80px;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--background-color);
+  position: fixed;
+  height: 80px;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .logo {
-    position: absolute;
-    left: 2rem;
+  position: absolute;
+  left: 2rem;
 }
 
 .logo img {
-    width: 60px;
-    height: auto;
+  width: 60px;
+  height: auto;
 }
 
 .nav-links {
-    display: flex;
-    width: 900 px;
-    background-color: rgba(72, 72, 72, 0.3);
-    border: 1px solid transparent;
-    border-radius: 62px;
-    background:
-        linear-gradient(black, black) padding-box,
-        /* inner background */
-        linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%) border-box;
-    background-clip: padding-box, border-box;
-    padding: 20px;
-    border-radius: 62px;
-    gap: 2rem;
+  display: flex;
+  width: 900 px;
+  background-color: rgba(72, 72, 72, 0.3);
+  border: 1px solid transparent;
+  border-radius: 62px;
+  background: linear-gradient(black, black) padding-box,
+    /* inner background */
+      linear-gradient(180deg, #595ec1 5%, #353983 45%, #25286c 100%) border-box;
+  background-clip: padding-box, border-box;
+  padding: 20px;
+  border-radius: 62px;
+  gap: 2rem;
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: var(--font-medium);
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-weight: var(--font-medium);
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #a9b3ff;
+  color: #a9b3ff;
 }
 
 /* === HAMBURGER === */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 18px;
-    cursor: pointer;
-    position: absolute;
-    right: 2rem;
-    z-index: 200;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  z-index: 200;
 }
 
 .hamburger span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: white;
-    border-radius: 3px;
-    transition: all 0.3s ease;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
 }
 
 /* === SIDEBAR === */
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(100%);
-    transition: transform 0.4s ease;
-    z-index: 150;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  z-index: 150;
 }
 
 .sidebar.active {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .sidebar a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: var(--font-medium);
-    margin: 1rem 0;
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: var(--font-medium);
+  margin: 1rem 0;
+  transition: color 0.3s ease;
 }
 
 .sidebar a:hover {
-    color: #a9b3ff;
+  color: #a9b3ff;
 }
 
 /* === CLOSE BUTTON === */
 .close-btn {
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s ease;
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .close-btn:hover {
-    color: #a9b3ff;
+  color: #a9b3ff;
 }
 
 /* === HAMBURGER ANIMATION === */
 .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger.active span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    justify-content: flex-start;
-    margin: auto;
-    margin-top: 100px;
-    background-image: url('./images/Home/herobg.png');
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100wh;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  margin: auto;
+  margin-top: 100px;
+  background-image: url("./images/Home/herobg.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100wh;
+  color: white;
 }
 
 .hero-section h1 {
-    font-family: "Onest", sans-serif;
-    font-size: 90px;
-    font-weight: var(--font-semibold);
-    text-align: center;
-    margin: 0;
-    margin-top: 80px;
+  font-family: "Onest", sans-serif;
+  font-size: 90px;
+  font-weight: var(--font-semibold);
+  text-align: center;
+  margin: 0;
+  margin-top: 80px;
 }
 
 .hero-section p {
-    font-family: "Onest", sans-serif;
-    font-size: var(--desktop-h3);
-    font-weight: var(--font-semibold);
-    text-align: center;
-    color: #FFFFFF;
+  font-family: "Onest", sans-serif;
+  font-size: var(--desktop-h3);
+  font-weight: var(--font-semibold);
+  text-align: center;
+  color: #ffffff;
 }
-
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
+  .nav-links {
+    display: none;
+  }
 
-    .hamburger {
-        display: flex;
-    }
+  .hamburger {
+    display: flex;
+  }
 
-    .hero-section h1 {
-        font-size: var(--mobile-h1);
-    }
+  .hero-section h1 {
+    font-size: var(--mobile-h1);
+  }
 
-    .hero-section p {
-        font-size: var(--mobile-body);
-    }
+  .hero-section p {
+    font-size: var(--mobile-body);
+  }
 }
+
+
