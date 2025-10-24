@@ -344,11 +344,11 @@ body {
     margin-top: 30px;
 }
 
-.lunareclipse .object-details{
+.lunareclipse .object-details {
     width: 70%;
 }
 
-.discovery{
+.discovery {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
@@ -356,33 +356,104 @@ body {
     margin: auto;
 }
 
-.disco-card{
+.disco-card {
     border: #474747 1px solid;
     border-radius: 24px;
     padding: 25px;
     width: 420px;
 }
 
-.disco-card img{
+.disco-card img {
     border-radius: 12px;
     border: #AAAAAA 0.5px solid;
     width: 100%;
 }
 
-.disco-card h1{
+.disco-card h1 {
     font-family: var(--font-family);
     font-size: 24px;
     font-weight: var(--font-semibold);
     color: #FFFFFF;
 }
 
-.disco-card p{
+.disco-card p {
     font-family: var(--font-family);
     font-size: var(--mobile-body);
     font-weight: var(--font-regular);
     color: var(--body-color);
     text-align: justify;
+    line-height: 1.5;
 }
+
+/* enthusiasts */
+
+.enthusiasts {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 27px;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: var(--secondary-color) 1px solid;
+    border-radius: 24px;
+    padding: 25px;
+    width: 365px;
+    height: 659.42px;
+    margin: auto;
+}
+
+
+.person img {
+    width: 100%;
+    height: 367px;
+}
+
+.person h1 {
+    font-size: var(--mobile-h4);
+    font-weight: var(--font-medium);
+    color: #FFFFFF;
+}
+
+.person p {
+    font-size: var(--mobile-body);
+    font-weight: var(--font-medium);
+    color: #BBBBBB;
+    text-align: justify;
+    line-height: 1.5;
+
+}
+
+
+.name-place {
+    display: flex;
+    justify-content: space-around;
+    gap: 119px;
+
+}
+
+.carlos {
+    gap: 95px;
+}
+
+.aisha {
+    gap: 48px;
+}
+
+.name-place p {
+    font-size: var(--mobile-body);
+    font-weight: var(--font-regular);
+    color: #FFFFFF;
+}
+
+
+
 
 @media (min-width: 768px) {
 
@@ -488,4 +559,16 @@ body {
         width: 50%;
         height: 100%;
     }
+
+    /* Discovery */
+    .disco-card p {
+        font-size: var(--desktop-body);
+    }
+
+    .enthusiasts {
+        grid-template-columns: repeat(3, 1fr);
+        height: 662.42px;
+        gap: 98px;
+    }
+
 }
