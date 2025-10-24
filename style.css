@@ -2,29 +2,24 @@
 /* Global variables */
 :root {
     --main-color: #020305;
-    --secondary-color: linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%);
+    --secondary-color: #353983;
+    --grdiant-color: linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%);
     --background-color: #020305;
     --font-family: "Onest", sans-serif;
     --heading-size: 2rem;
+    --body-color:#8D8D8D;
 
     /* === Font Family === */
     --font-family-base: "Onest", sans-serif;
 
     /* === Desktop Typography === */
     --desktop-h1: 4rem;
-    /* Main hero title */
     --desktop-h2: 3rem;
-    /* Section title */
     --desktop-h3: 2rem;
-    /* Subsection title */
     --desktop-h4: 1.5rem;
-    /* Small heading */
     --desktop-h5: 1.25rem;
-    /* Mini heading / label */
     --desktop-body: 1rem;
-    /* Paragraphs */
     --desktop-small: 0.875rem;
-    /* Small text / footer */
 
     /* === Mobile Typography === */
     --mobile-h1: 2.5rem;
@@ -82,35 +77,12 @@ body {
 }
 
 .nav-links {
-    display: flex;
-    width: 900 px;
-    background-color: rgba(72, 72, 72, 0.3);
-    border: 1px solid transparent;
-    border-radius: 62px;
-    background:
-        linear-gradient(black, black) padding-box,
-        /* inner background */
-        linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%) border-box;
-    background-clip: padding-box, border-box;
-    padding: 20px;
-    border-radius: 62px;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: var(--font-medium);
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #a9b3ff;
+    display: none;
 }
 
 /* === HAMBURGER === */
 .hamburger {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 24px;
@@ -196,52 +168,152 @@ body {
 .hero-section {
     display: flex;
     flex-direction: column;
-    gap: 50px;
     align-items: center;
     justify-content: flex-start;
+    gap: 25px;
     margin: auto;
-    margin-top: 100px;
+    padding: 30px;
+    margin-top: 70px;
     background-image: url('./images/Home/herobg.png');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100wh;
+    height: 340px;
+    width: 100%;
     color: white;
 }
 
 .hero-section h1 {
-    font-family: "Onest", sans-serif;
-    font-size: 90px;
-    font-weight: var(--font-semibold);
-    text-align: center;
+    font-size: var(--mobile-h1);
+    font-weight: var(--font-bold);
+    text-align: left;
     margin: 0;
-    margin-top: 80px;
 }
 
 .hero-section p {
-    font-family: "Onest", sans-serif;
-    font-size: var(--desktop-h3);
+    font-size: var(--mobile-h3);
     font-weight: var(--font-semibold);
-    text-align: center;
+    text-align: left;
+    color: #929292;
+}
+
+.hero-section span {
+    color: var(--secondary-color);
+}
+
+.hero-section button{
+    font-size: var(--mobile-body);
+    font-weight: var(--font-semibold);
+    color: white;
+    background-color: #000000;
+    border: #FFFFFF 1px solid;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    margin-top: 16px;
+    padding: 12px 24px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section button:hover{
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* Clestial section */
+.clestial-object{
+    width: 95%;
+    height: 705px;
+    margin: auto;
+    border: #474747 1px solid;
+    border-radius: 24px;
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+}
+
+.clestial-object .left-object{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.left-object h1{
+    font-size: var(--mobile-h3);
+    font-weight: var(--font-semibold);
     color: #FFFFFF;
+    margin: 0;
+}
+
+.left-object p{
+    font-size: var(--mobile-body);
+    font-weight: var(--font-regular);
+    color: var(--body-color);
+    line-height: 1.5;
+    text-align: justify;
 }
 
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+    /* Navbar*/
     .nav-links {
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 900px;
+        background-color: rgba(72, 72, 72, 0.3);
+        border: 1px solid transparent;
+        border-radius: 62px;
+        background:
+            linear-gradient(black, black) padding-box,
+            linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%) border-box;
+        background-clip: padding-box, border-box;
+        padding: 20px;
+        gap: 2rem;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: var(--font-medium);
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #a9b3ff;
     }
 
     .hamburger {
-        display: flex;
+        display: none;
+    }
+
+    /* hero section*/
+    .hero-section {
+        height: 609px;
+        gap: 37px;
     }
 
     .hero-section h1 {
-        font-size: var(--mobile-h1);
+        font-size: 90px;
+        text-align: center;
+        margin-top: 60px;
     }
 
     .hero-section p {
-        font-size: var(--mobile-body);
+        font-size: var(--desktop-h3);
+        text-align: center;
+        color: var(--text-light);
+    }
+
+    .hero-section button{
+        margin-top: 65px;
+    }
+
+    /* Clestial section */
+
+    .clestial-object {
+        height: 495px;
     }
 }
-

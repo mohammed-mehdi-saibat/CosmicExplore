@@ -7,12 +7,15 @@
     <title>Home Page</title>
     <!-- Main css file -->
     <link rel="stylesheet" href="style.css">
+
     <!-- Render All elements normally -->
     <link rel="stylesheet" href="normalize.css">
+
     <!-- Onset font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
     <!-- === JS TOGGLE === -->
 </head>
 
@@ -66,7 +69,6 @@
             hamburger.classList.remove("active");
             sidebar.classList.remove("active");
         });
-
         // Optional: close sidebar when clicking a link
         document.querySelectorAll(".sidebar a").forEach(link => {
             link.addEventListener("click", () => {
@@ -79,8 +81,25 @@
     <!-- === HERO SECTION === -->
     <section class="hero-section">
         <h1>Explore the Wonders of
-            the Universe </h1>
+            <span>the Universe</span>
+        </h1>
         <p>Your journey through space and time begins here</p>
+        <button>Start Exploring</button>
     </section>
+
+    <div class="clestial-object">
+        <div class="left-object">
+            <h1>Celestial Object of the Week</h1>
+            <p>Known as the Red Planet, Mars has long fascinated humanity with its rusty deserts, icy poles, and colossal
+            volcanoes. Scientists believe it may once have had flowing water — and possibly life. Today, robotic
+            explorers like NASA’s Perseverance and Curiosity roam its surface, uncovering clues about its ancient past.
+            With every new discovery, Mars brings us closer to understanding whether it could one day become the next
+            home for humankind.</p>
+        </div>
+        <div class="rightobject">
+            
+        </div>
+    </div>
+
 
 </html>

@@ -1,0 +1,40 @@
+/* Home page */
+/* Global variables */
+:root {
+    --main-color: #020305;
+    --secondary-color: #353983;
+    --grdiant-color: linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%);
+    --background-color: #020305;
+    --font-family: "Onest", sans-serif;
+    --heading-size: 2rem;
+    --body-color:#8D8D8D;
+
+    /* === Font Family === */
+    --font-family-base: "Onest", sans-serif;
+
+    /* === Desktop Typography === */
+    --desktop-h1: 4rem;
+    --desktop-h2: 3rem;
+    --desktop-h3: 2rem;
+    --desktop-h4: 1.5rem;
+    --desktop-h5: 1.25rem;
+    --desktop-body: 1rem;
+    --desktop-small: 0.875rem;
+
+    /* === Mobile Typography === */
+    --mobile-h1: 2.5rem;
+    --mobile-h2: 2rem;
+    --mobile-h3: 1.5rem;
+    --mobile-h4: 1.25rem;
+    --mobile-h5: 1.125rem;
+    --mobile-body: 0.95rem;
+    --mobile-small: 0.8rem;
+
+    /* === Font Weights === */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+}
+
