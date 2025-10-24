@@ -1,0 +1,59 @@
+.m-section-catalogue {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    text-align: start;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    padding: 80px 82px;
+    text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.m-section-catalogue::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/Catalogue/glaxy pic.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: scale(1);
+    animation: zoom 12s ease-in-out infinite alternate;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.12);
+    }
+}
+
+.m-section-catalogue h1 {
+
+    font-family: "Onest", sans-serif;
+    font-size: 90px;
+    font-weight: var(--font-semibold);
+
+    margin: 0;
+    margin-top: 80px;
+}
+
+.m-section-catalogue p {
+    font-family: "Onest", sans-serif;
+    font-size: var(--desktop-h3);
+    font-weight: var(--font-regular);
+    text-align: start;
+    color: #FFFFFF;
+
+}
