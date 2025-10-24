@@ -1,6 +1,5 @@
 /* Home page */
 /* Global variables */
-
 :root {
   --main-color: #020305;
   --secondary-color: linear-gradient(
@@ -197,6 +196,7 @@ body {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
+/* === hero-section === */
 .hero-section {
   display: flex;
   flex-direction: column;
