@@ -265,17 +265,15 @@ footer {
     position: relative;
     display: flex;
     flex-direction: column;
-
     align-items: flex-start;
     text-align: start;
-    justify-content: flex-start;
+    justify-content: center;
     height: 100%;
     width: 100%;
     color: white;
     overflow: hidden;
     padding: 80px 82px;
     text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
-
 
 }
 
@@ -401,12 +399,33 @@ footer {
 }
 
 .social-icons img {
-  width: 28px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .social-icons img:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
+}
+
+#fb:hover {
+    box-shadow: rgb(70, 127, 233) 4px -4px 20px ,rgb(70, 127, 233) -4px 4px 20px;
+}
+
+#X:hover {
+    box-shadow: rgb(0, 0, 0) 4px -4px 20px ,rgb(0, 0, 0) -4px 4px 20px;
+}
+
+#inst:hover {
+    box-shadow: rgb(216, 90, 174) 4px -4px 20px ,rgb(206, 39, 39) -4px 4px 20px;
+}
+
+#ytp:hover {
+    box-shadow: rgb(221, 17, 17) 4px -4px 20px ,rgb(247, 16, 16) -4px 4px 20px;
+}
+
+#messg:hover {
+    box-shadow: rgb(70, 127, 233) 4px -4px 20px ,rgb(70, 127, 233) -4px 4px 20px;
 }
 
 /* Footer Columns */
@@ -439,7 +458,7 @@ footer {
   color: #cfd3e0;
   text-decoration: none;
   font-size: 0.9rem;
-  transition: color 0.3s ease;
+  transition: color 0.7s ease;
 }
 
 .footer-col ul li a:hover {
