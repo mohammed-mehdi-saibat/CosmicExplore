@@ -173,6 +173,7 @@ body {
     justify-content: flex-start;
     gap: 25px;
     margin: auto;
+    margin-bottom: 60px;
     padding: 30px;
     margin-top: 70px;
     background-image: url('./images/Home/herobg.png');
@@ -227,7 +228,6 @@ body {
     width: 85%;
     height: 815px;
     margin: auto;
-    margin-top: 60px;
     border: #474747 1px solid;
     border-radius: 24px;
     padding: 32px 40px 32px 40px;
@@ -248,7 +248,7 @@ body {
     margin: 0;
 }
 
-.left-object > p {
+.left-object>p {
     font-size: var(--mobile-body);
     font-weight: var(--font-regular);
     color: #8D8D8D;
@@ -260,14 +260,19 @@ body {
 .smallcard {
     display: inline-flex;
     gap: 5px;
-   border: #AAAAAA 1px solid;
-   border-radius: 24px;
-   padding: 10px;
-   margin: 5px;
-   
+    border: #AAAAAA 1px solid;
+    border-radius: 24px;
+    padding: 10px;
+
+    margin: 5px;
+
 }
 
-.object-details p{
+.object-details {
+    width: 90%;
+}
+
+.object-details p {
     font-family: var(--nd-font-family);
     font-weight: var(--font-regular);
     font-size: 10px;
@@ -275,7 +280,7 @@ body {
     display: inline-block;
 }
 
-.rightobject{
+.rightobject {
     background-image: url('./images/Home/object/Mars.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,15 +293,95 @@ body {
     border-radius: 12px;
 }
 
-.titles h1{
+/* Events */
+
+.titles h1 {
     font-size: var(--mobile-h2);
     font-weight: var(--font-semibold);
     color: #FFFFFF;
-    margin-left: 112px;
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.titles span{
+.titles span {
     color: var(--secondary-color);
+}
+
+.orionids {
+    background-image: url('./images/Home/object/Orionids-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    border: #474747 1px solid;
+    border-radius: 12px;
+}
+
+.orionidscon {
+    height: 660px;
+}
+
+.lunar {
+    background-image: url('./images/Home/object/lunar-eclipse.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    border: #474747 1px solid;
+    border-radius: 12px;
+}
+
+.lunareclipse {
+    height: 600px;
+    margin-top: 30px;
+}
+
+.lunareclipse .object-details{
+    width: 70%;
+}
+
+.discovery{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+}
+
+.disco-card{
+    border: #474747 1px solid;
+    border-radius: 24px;
+    padding: 25px;
+    width: 420px;
+}
+
+.disco-card img{
+    border-radius: 12px;
+    border: #AAAAAA 0.5px solid;
+    width: 100%;
+}
+
+.disco-card h1{
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: var(--font-semibold);
+    color: #FFFFFF;
+}
+
+.disco-card p{
+    font-family: var(--font-family);
+    font-size: var(--mobile-body);
+    font-weight: var(--font-regular);
+    color: var(--body-color);
+    text-align: justify;
 }
 
 @media (min-width: 768px) {
@@ -367,24 +452,40 @@ body {
     }
 
     .left-object h1 {
-    font-size: var(--desktop-h3);}
+        font-size: var(--desktop-h3);
+    }
 
-    .left-object > p {
+    .left-object>p {
         width: 90%;
         font-family: var(--desktop-h2);
     }
 
-    .rightobject{
+    .rightobject {
         margin: 0;
         width: 50%;
         height: 100%;
     }
 
-/* Events */
 
-    .titles h1{
-    font-size: var(--desktop-h1);
-    font-weight: var(--font-bold);
-    color: #FFFFFF;
-}
+    /* Events */
+
+    .titles h1 {
+        font-size: var(--desktop-h1);
+        font-weight: var(--font-bold);
+        color: #FFFFFF;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .orionids {
+        margin: 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .lunar {
+        margin: 0;
+        width: 50%;
+        height: 100%;
+    }
 }
