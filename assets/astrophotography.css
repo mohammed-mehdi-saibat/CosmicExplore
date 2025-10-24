@@ -164,19 +164,26 @@ body {
     height: 30px;
     border-radius: 8px;
     box-shadow: 1px 1px 3px white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 
 .astrophotography-icon img {
     width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .astrophotography-image .astrophotography-profile {
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 20px;
-    left: 15px;
+    bottom: 25px;
+    left: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .astrophotography-profile img {
@@ -195,21 +202,29 @@ body {
 
 .astrophotography-image .astrophotography-download {
     position: absolute;
-    bottom: 20px;
-    right: 25px;
+    bottom: 25px;
+    right: 30px;
 }
 
 .astrophotography-image .astrophotography-heart {
     position: absolute;
-    top: 15px;
-    right: 70px;
+    top: 25px;
+    right: 75px;
 }
 
 .astrophotography-image .astrophotography-add {
     position: absolute;
-    top: 15px;
-    right: 25px;
+    top: 25px;
+    right: 30px;
 }
+
+.astrophotography-image:hover .astrophotography-icon, .astrophotography-image:hover .astrophotography-profile {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
 
 
 @media (min-width: 600px) {
