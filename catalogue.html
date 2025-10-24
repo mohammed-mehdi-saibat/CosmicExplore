@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <title>Home Page</title>
     <!-- Main css file -->
     <link rel="stylesheet" href="style.css">
     <!-- Render All elements normally -->
@@ -20,17 +19,17 @@
 
 
 
-<body>
+<body class="catalogueBody">
     <!-- === NAVBAR === -->
     <header class="navbar">
         <div class="logo"><img src="./images/Home/Header/Cosmic explore logo.png" alt="logo"></div>
 
         <nav class="nav-links">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="Astrophotography.html">Astrophotography</a>
             <a href="astronomicalNewsEvents.html">Astronomical News </a>
             <a href="catalogue.html">Catalogue</a>
-            <a href="#">Community</a>
+            <a href="community.html">Community</a>
             <a href="missions.html">Missions</a>
         </nav>
 
@@ -45,25 +44,43 @@
     <!-- === SIDEBAR=== -->
     <div class="sidebar">
         <span class="close-btn">&times;</span>
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="Astrophotography.html">Astrophotography</a>
-        <a href="astronomicalNewsEvents.html">Astronomical News </a>
-        <a href="#">Catalogue</a>
-        <a href="#">Community</a>
-        <a href="#">Missions</a>
+        <a href="astronomicalNewsEvents.html">Astronomical News</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="community.html">Community</a>
+        <a href="missions.html">Missions</a>
     </div>
     <!-- main -->
     <main>
+        <section class="h-section-catalogue">
+            <h1>Explore the Universe </h1>
+            <p>Discover the cosmos: Planets & Moons, Stars, Galaxies, Nebulae,
+                and Black Holes. Dive into the detailed science of our universe.</p>
+        </section>
+        <div class="CatalogueTitles">
+            <img src="images/Catalogue/saturn_3594515.png" alt="">
+            <h1>PLANETS & MOONS</h1>
+        </div>
 
+        <div class="catalogueNav">
+            <ul>
+                <li class="lis1" id="selectede"><a href="">PLANETS & MOONS</a></li>
+                <li class="lis2"><a href="">STARS & CONSTELLATIONS</a></li>
+                <li class="lis3"><a href="">GALAXIES</a></li>
+                <li class="lis4"><a href="">NEBULAE</a></li>
+                <li class="lis5"><a href="">BLACK HOLES</a></li>
+            </ul>
+        </div>
 
 
 
     </main>
-    <!-- header -->
-    <header>
+    <!-- footer -->
+    <footer>
 
 
-    </header>
+    </footer>
 
     <!-- === JS TOGGLE === -->
     <script>
