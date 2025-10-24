@@ -1,0 +1,286 @@
+* {
+    color: white;
+    font-family: "Onest", sans-serif;
+}
+
+:root {
+    --main-color: #020305;
+    --secondary-color: linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%);
+    --background-color: #020305;
+    --font-family: "Onest", sans-serif;
+    --heading-size: 2rem;
+
+    /* === Font Family === */
+    --font-family-base: "Onest", sans-serif;
+
+    /* === Desktop Typography === */
+    --desktop-h1: 4rem;
+    /* Main hero title */
+    --desktop-h2: 3rem;
+    /* Section title */
+    --desktop-h3: 2rem;
+    /* Subsection title */
+    --desktop-h4: 1.5rem;
+    /* Small heading */
+    --desktop-h5: 1.25rem;
+    /* Mini heading / label */
+    --desktop-body: 1rem;
+    /* Paragraphs */
+    --desktop-small: 0.875rem;
+    /* Small text / footer */
+
+    /* === Mobile Typography === */
+    --mobile-h1: 2.5rem;
+    --mobile-h2: 2rem;
+    --mobile-h3: 1.5rem;
+    --mobile-h4: 1.25rem;
+    --mobile-h5: 1.125rem;
+    --mobile-body: 0.95rem;
+    --mobile-small: 0.8rem;
+
+    /* === Font Weights === */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+.PlanetsBox {
+
+    font-family: var(--font-family);
+    width: 766px;
+    height: 562px;
+    background-image: url(images/Catalogue/Jupiter.jpg);
+    border-radius: 12px;
+    border: 2px solid #FF5900;
+    padding-right: 32px;
+    margin: 52px;
+
+}
+
+.PlanetsBox h1 {
+    padding: 0;
+    font-size: 55px;
+    font-weight: var(--font-bold);
+    display: flex;
+    justify-content: flex-end;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.PlanetsBox h2 {
+
+
+    font-size: 48px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: var(--font-medium);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+#whitebox {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* gap: 23px; */
+
+
+
+}
+
+.textblock {
+    margin: 52px;
+    background-color: white;
+    width: 515px;
+    height: 351px;
+    margin: 23px;
+    font-family: Onest;
+    font-size: 20px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    padding: 0 25px;
+    border-radius: 12px;
+
+    h1 {
+        color: #000000;
+
+    }
+
+    p {
+        color: #545454;
+        padding: 5px 0;
+
+    }
+
+    h3 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        width: 134px;
+        height: 53px;
+        background-color: black;
+        margin-left: auto;
+        border-radius: 12px;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero-section h1 {
+        font-size: var(--mobile-h1);
+    }
+
+    .hero-section p {
+        font-size: var(--mobile-body);
+    }
+
+    /* catalogue */
+    .h-section-catalogue {
+        /* background-attachment: scroll; */
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 80px 0px;
+        gap: 20px;
+
+
+        h1 {
+            font-size: 48px;
+            font-weight: var(--font-semibold);
+
+
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: var(--font-regular);
+            text-align: center;
+            padding: 0 31px;
+
+        }
+    }
+
+    .catalogueNav {
+        display: none;
+    }
+
+    .CatalogueTitles {
+        display: flex;
+        justify-content: center;
+    }
+
+    .CatalogueTitles img {
+        width: 31px;
+        height: 31px;
+    }
+
+    .CatalogueTitles h1 {
+        font-size: 24px;
+
+    }
+
+    
+
+    .PlanetsBox {
+
+        
+        width: 347.562px;
+        height: 255px;
+
+        border-radius: 12px;
+        border: 2px solid #FF5900;
+        padding-right: 32px;
+        margin: 52px;
+        background-position: center;
+        background-size: cover;
+        h1{
+            font-size: 32px ;
+
+        }
+        h2{
+            font-size :24px ;
+
+        }
+
+    }
+
+    /* catalogue end*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .h-section-catalogue {
+        /* background-attachment: scroll; */
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 80px 0px;
+        gap: 20px;
+
+
+        h1 {
+            font-size: 48px;
+            font-weight: var(--font-semibold);
+
+
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: var(--font-regular);
+            text-align: center;
+            padding: 0 31px;
+
+        }
+    }
+
+    .catalogueNav {
+        display: none;
+    }
+
+    /* catalogue end*/
+
+
+
+}

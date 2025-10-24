@@ -433,7 +433,17 @@ body {
     .catalogueNav{
         display: none;
     }
-
+    .CatalogueTitles{
+        display: flex;
+        justify-content: center;
+    }
+    .CatalogueTitles img{
+        width: 31px;
+        height: 31px;
+    }.CatalogueTitles h1{
+        font-size: 24px;
+        
+    }
     /* catalogue end*/
 
 
