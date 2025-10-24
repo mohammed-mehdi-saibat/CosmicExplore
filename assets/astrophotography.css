@@ -131,6 +131,31 @@ body {
     font-weight: 400;
 }
 
+/* astrophotography section */
+
+
+.astrophotography-images {
+column-count:1;
+}
+
+.astrophotography-images .astrophotography-image {
+    width: 375px;
+}
+
+.astrophotography-image img {
+    position: relative;
+    width: 100%;
+}
+
+.astrophotography-image .astrophotography-icon {
+    position: absolute;
+    background-color: #E1E1E1;
+    width: 30px;
+    border-radius: 5px;
+    top: 0;
+}
+
+
 @media (min-width: 600px) {
     .arabi-h1 {
         font-size: 48px;
