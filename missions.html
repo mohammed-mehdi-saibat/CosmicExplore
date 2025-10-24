@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <!-- Main css file -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="missions.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="missions.css" />
     <!-- Render All elements normally -->
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="normalize.css" />
     <!-- Onset font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- === JS TOGGLE === -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- === NAVBAR === -->
     <header class="navbar">
-        <div class="logo"><img src="./images/Home/Header/Cosmic explore logo.png" alt="logo"></div>
+      <div class="logo">
+        <img src="./images/Home/Header/Cosmic explore logo.png" alt="logo" />
+      </div>
 
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="#">Astrophotography</a>
-            <a href="#">Astronomical News </a>
-            <a href="#">Catalogue</a>
-            <a href="#">Community</a>
-            <a href="missions.html">Missions</a>
-        </nav>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">Astrophotography</a>
+        <a href="#">Astronomical News </a>
+        <a href="#">Catalogue</a>
+        <a href="#">Community</a>
+        <a href="missions.html">Missions</a>
+      </nav>
 
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
 
     <!-- === SIDEBAR=== -->
 
     <div class="sidebar">
-        <span class="close-btn">&times;</span>
-        <a href="#">Home</a>
-        <a href="#">Astrophotography</a>
-        <a href="#">Astronomical News </a>
-        <a href="#">Catalogue</a>
-        <a href="#">Community</a>
-        <a href="#">Missions</a>
+      <span class="close-btn">&times;</span>
+      <a href="#">Home</a>
+      <a href="#">Astrophotography</a>
+      <a href="#">Astronomical News </a>
+      <a href="#">Catalogue</a>
+      <a href="#">Community</a>
+      <a href="#">Missions</a>
     </div>
 
     <!-- === JS TOGGLE === -->
     <script>
-        const hamburger = document.querySelector(".hamburger");
-        const sidebar = document.querySelector(".sidebar");
-        const closeBtn = document.querySelector(".close-btn");
+      const hamburger = document.querySelector(".hamburger");
+      const sidebar = document.querySelector(".sidebar");
+      const closeBtn = document.querySelector(".close-btn");
 
-        // Open sidebar
-        hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("active");
-            sidebar.classList.add("active");
-        });
+      // Open sidebar
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        sidebar.classList.add("active");
+      });
 
-        // Close sidebar
-        closeBtn.addEventListener("click", () => {
-            hamburger.classList.remove("active");
-            sidebar.classList.remove("active");
-        });
+      // Close sidebar
+      closeBtn.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        sidebar.classList.remove("active");
+      });
 
-        // Optional: close sidebar when clicking a link
-        document.querySelectorAll(".sidebar a").forEach(link => {
-            link.addEventListener("click", () => {
-                hamburger.classList.remove("active");
-                sidebar.classList.remove("active");
-            });
+      // Optional: close sidebar when clicking a link
+      document.querySelectorAll(".sidebar a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          sidebar.classList.remove("active");
         });
+      });
     </script>
 
     <section class="m-section-catalogue">
-            <h1>Space Mission Timeline </h1>
-            <p>Explore humanity's journey through space exploration. From the first satellite launches to future missions to Mars and beyond.</p>
+      <h1>Space Mission Timeline</h1>
+      <p>
+        Explore humanity's journey through space exploration. From the first
+        satellite launches to future missions to Mars and beyond.
+      </p>
     </section>
 
     <section class="cards-section">
@@ -227,7 +234,7 @@
         </div>
       </div>
 
-      <div class="section-title" id="future"><h2> Future (2026–2040)</h2></div>
+      <div class="section-title" id="future"><h2>Future (2026–2040)</h2></div>
       <div class="cards-group">
         <div class="card">
           <div class="image">
@@ -293,5 +300,84 @@
       </div>
     </section>
 
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col brand">
+          <div class="logo-footer">
+            <img src="images/missions/logo.png" alt="" />
+            <h2>CosmicExplore</h2>
+          </div>
 
+          <p class="p-footer">
+            Discover the wonders of the universe with beginner-friendly
+            astronomy resources.
+          </p>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="images/missions/fb-Link.png" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/X-Link.png" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/insta-Link.png" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/ytb-Link.png" alt="YouTube"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/msg-Link.png" alt="Email"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">Celestial Catalogue</a></li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Space Missions</a></li>
+            <li><a href="#">Astrophotography</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="#">Join Community</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Photo Gallery</a></li>
+            <li><a href="#">Contributors</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Beginner Guides</a></li>
+            <li><a href="#">Equipment Reviews</a></li>
+            <li><a href="#">Observation Tips</a></li>
+            <li><a href="#">Sky Calendar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 CosmicExplore. All rights reserved. | Explore the cosmos with
+          wonder.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
