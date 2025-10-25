@@ -1,0 +1,413 @@
+.astro-hero-section {
+  height: 100vh;
+  display: flex;
+  padding-left: 25px;
+  background: url(astroImages/section1-background.jpg) center/cover;
+  color: white;
+  padding-top: 60px;
+}
+
+.astro-hero-section .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.astro-hero-section .text h1 {
+  font-size: 111px;
+}
+
+.astro-hero-section .text p {
+  margin-top: -70px;
+  width: 500px;
+  font-size: 24px;
+}
+
+.news-main-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  padding-top: 50px;
+}
+
+.news-main-title p:first-child {
+  font-size: 64px;
+  color: #595ec1;
+  font-weight: 600;
+}
+
+.news-main-title p:last-child {
+  font-size: 60px;
+  color: white;
+  font-weight: 500;
+}
+
+.news-src {
+  color: white;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-text {
+  display: flex;
+  flex-direction: column;
+  gap: 300px;
+}
+
+.news-title {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.news-cards .card1 {
+  border: 1px solid #aaaaaa;
+  width: 40%;
+  padding: 10px;
+  margin: 23px;
+  border-radius: 12px;
+  background: url(astroImages/mood-landing-new.jpg) center/cover;
+}
+
+.news-cards .card2 {
+  background: url(astroImages/gaia-mission-new.jpg) center/cover;
+}
+.news-cards .card3 {
+  background: url(astroImages/webb-telescope-new.jpg) center/cover;
+}
+.news-cards .card4 {
+  background: url(astroImages/spaceX-new.jpg) center/cover;
+}
+.news-cards .card5 {
+  background: url(astroImages/parker-solar-new.jpg) center/cover;
+}
+.news-cards .card6 {
+  background: url(astroImages/dwarf-planet-new.jpg) center/cover;
+}
+
+.news-cards .card1 span {
+  color: white;
+}
+
+.news-cards .card1 p {
+  font-size: 42px;
+  font-weight: 1000;
+  color: white;
+}
+
+.events-cards {
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.events-cards .card1 {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  border: 1px solid #aaaaaa;
+  border-radius: 12px;
+}
+
+.events-cards .card1 .event-pic {
+  background-color: yellow;
+  width: 15%;
+  height: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background: url(astroImages/spaceX-event.jpg) center/cover;
+}
+
+.events-cards .card2 .event-pic {
+  background: url(astroImages/hubble-event.jpg) center/cover;
+}
+
+.events-cards .card3 .event-pic {
+  background: url(astroImages/solar-flare-event.jpg) center/cover;
+}
+
+.events-cards .card1 .event-content {
+  width: 40%;
+}
+
+.events-cards .card1 .event-content {
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.events-cards .card1 .event-content .event-top {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.events-cards .card1 .event-content .event-top .top-button {
+  font-size: 12px;
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.events-cards .card1 .event-content .event-top .date {
+  font-size: 12px;
+  color: #6a7282;
+}
+
+.events-cards .card1 .event-content .event-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.events-cards .card1 .event-content .event-middle p {
+  font-size: 16px;
+}
+
+.events-cards .card1 .event-content .event-middle h3 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.events-cards .card1 .event-content .bottom-button {
+  border: 1px solid white;
+  padding: 5px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .astro-hero-section .text h1 {
+    font-size: 40px;
+  }
+  .astro-hero-section .text p {
+    font-size: 14px;
+    margin-top: -20px;
+    width: 300px;
+    font-weight: 200;
+  }
+
+  .astro-hero-section {
+    height: 60vh;
+  }
+
+  .news-main-title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .news-main-title p:first-child {
+    font-size: 23px;
+    color: #595ec1;
+    font-weight: 600;
+  }
+
+  .news-main-title p:last-child {
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    margin-top: -15px;
+  }
+
+  .news-cards .card1 {
+    width: 100%;
+  }
+
+  .news-cards .card1 p {
+    font-size: 12px;
+  }
+
+  .news-cards .card1 .news-src,
+  .news-cards span {
+    font-size: 10px;
+  }
+
+  /* .events-cards {
+    margin-bottom: 250px;
+  } */
+
+  .events-cards .card1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .events-cards .card1 .event-content {
+    width: 100%;
+  }
+
+  .events-cards .card1 .event-content .event-top {
+    flex-direction: column;
+  }
+
+  .events-cards .card1 .event-content .event-top .top-button {
+    visibility: hidden;
+  }
+
+  .events-cards .card1 .event-content .event-top .date {
+    font-size: 12px;
+  }
+
+  .events-cards .card1 .event-content .event-middle p {
+    font-size: 10px;
+  }
+
+  .events-cards .card1 .event-content .event-middle h3 {
+    font-size: 13px;
+  }
+
+  .events-cards .card1 .event-pic {
+    height: 30%;
+    visibility: visible;
+    width: 100%;
+  }
+}
+
+/*footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 100px;
+}
+
+.main-footer {
+  background-color: #000000;
+  color: #cfd3e0;
+  padding: 50px 20px 25px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col.brand h2 {
+  color: #9ca8ff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer-col.brand p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #bfc4d9;
+  max-width: 250px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+#fb:hover {
+  box-shadow: rgb(70, 127, 233) 4px -4px 20px, rgb(70, 127, 233) -4px 4px 20px;
+}
+
+#X:hover {
+  box-shadow: rgb(0, 0, 0) 4px -4px 20px, rgb(0, 0, 0) -4px 4px 20px;
+}
+
+#inst:hover {
+  box-shadow: rgb(216, 90, 174) 4px -4px 20px, rgb(206, 39, 39) -4px 4px 20px;
+}
+
+#ytp:hover {
+  box-shadow: rgb(221, 17, 17) 4px -4px 20px, rgb(247, 16, 16) -4px 4px 20px;
+}
+
+#messg:hover {
+  box-shadow: rgb(70, 127, 233) 4px -4px 20px, rgb(70, 127, 233) -4px 4px 20px;
+}
+
+/* Footer Columns */
+
+.logo-footer {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.logo-footer img {
+  width: 55px;
+  height: 55px;
+}
+.footer-col h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin: 5px 0;
+}
+
+.footer-col ul li a {
+  color: #cfd3e0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.7s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #9ca8ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #2a2d3a;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #8a90a5;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-col {
+    flex: 1;
+  }
+
+  .footer-col.brand {
+    flex: 1.5;
+  }
+}

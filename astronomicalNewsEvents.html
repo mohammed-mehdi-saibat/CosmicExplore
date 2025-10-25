@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <!-- Main css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- My own css file -->
+    <link rel="stylesheet" href="astronomicalNewsEvents.css" />
+    <!-- Render All elements normally -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- Onset font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- === NAVBAR === -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="./images/Home/Header/Cosmic explore logo.png" alt="logo" />
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Astrophotography.html">Astrophotography</a>
+        <a href="astronomicalNewsEvents.html">Astronomical News </a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="community.html">Community</a>
+        <a href="missions.html">Missions</a>
+      </nav>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <!-- === NAVBAR === -->
+    <!-- === SIDEBAR=== -->
+    <div class="sidebar">
+      <span class="close-btn">&times;</span>
+      <a href="#">Home</a>
+      <a href="#">Astrophotography</a>
+      <a href="astronomicalNewsEvents.html">Astronomical News </a>
+      <a href="#">Catalogue</a>
+      <a href="community.html">Community</a>
+      <a href="#">Missions</a>
+    </div>
+    <!-- === SIDEBAR=== -->
+
+    <!-- === JS TOGGLE === -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const sidebar = document.querySelector(".sidebar");
+      const closeBtn = document.querySelector(".close-btn");
+
+      // Open sidebar
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        sidebar.classList.add("active");
+      });
+
+      // Close sidebar
+      closeBtn.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        sidebar.classList.remove("active");
+      });
+
+      // Optional: close sidebar when clicking a link
+      document.querySelectorAll(".sidebar a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          sidebar.classList.remove("active");
+        });
+      });
+    </script>
+    <!-- === JS TOGGLE === -->
+
+    <!-- === HERO SECTION === -->
+    <div class="astro-hero-section">
+      <div class="text">
+        <h1>News & Events</h1>
+        <p>
+          Discover the mysteries of space, from dazzling galaxies to the latest
+          cosmic discoveries.
+        </p>
+      </div>
+    </div>
+    <!-- === HERO SECTION === -->
+    <!-- === NEWS SECTION === -->
+    <div class="news-main-title">
+      <p>Recent News Articles</p>
+      <p>2025 new releases</p>
+    </div>
+    <div class="news-cards">
+      <div class="card1">
+        <div class="news-text">
+          <div class="news-src">Reuters</div>
+          <div class="news-title">
+            <span>October 20, 2025</span>
+            <p>
+              Discover the mysteries of space, from dazzling galaxies to the
+              latest cosmic discoveries
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card1 card2">
+        <div class="news-text">
+          <div class="news-src">Cosmos</div>
+          <div class="news-title">
+            <span>October 2025</span>
+            <p>
+              ESA's Gaia Mission Discovers Potential Moons Around 350 Asteroids.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card1 card3">
+        <div class="news-text">
+          <div class="news-src">Nasa Science</div>
+          <div class="news-title">
+            <span>September 2025</span>
+            <p>
+              NASA's Webb Telescope Observes Moon-Forming Disk Around Exoplanet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card1 card4">
+        <div class="news-text">
+          <div class="news-src">The Times of India</div>
+          <div class="news-title">
+            <span>September 2025</span>
+            <p>
+              Elon Musk says SpaceX will launch 90% of world’s payloads in 2025.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card1 card5">
+        <div class="news-text">
+          <div class="news-src">Nasa</div>
+          <div class="news-title">
+            <span>July 10 2025</span>
+            <p>
+              NASA’s probe got within 3.8 million miles of the Sun, revealing
+              new solar wind details. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card1 card6">
+        <div class="news-text">
+          <div class="news-src">Live Science</div>
+          <div class="news-title">
+            <span>July 24 2025</span>
+            <p>Dwarf planet “Ammonite” discovered beyond Pluto</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- === NEWS SECTION === -->
+    <!-- === EVENTS SECTION === -->
+    <div class="news-main-title">
+      <p>Upcoming Events</p>
+      <p>2025 Events</p>
+    </div>
+    <div class="events-cards">
+      <div class="card1">
+        <div class="event-pic"></div>
+        <div class="event-content">
+          <div class="event-top">
+            <div class="top-button">Research</div>
+            <div class="date">October 2, 2025</div>
+          </div>
+          <div class="event-middle">
+            <p>SpaceX successfully Lands Starship on Mars Simulation</p>
+            <h3>
+              Scientists using data from multiple space telescopes have
+              uncovered new details about how supermassive black holes formed in
+              the early universe, challenging previous theories.
+            </h3>
+          </div>
+          <div class="event-bottom">
+            <div class="bottom-button">Read fill article</div>
+          </div>
+        </div>
+      </div>
+      <div class="card1 card2">
+        <div class="event-pic"></div>
+        <div class="event-content">
+          <div class="event-top">
+            <div class="top-button">Technology</div>
+            <div class="date">October 12, 2025</div>
+          </div>
+          <div class="event-middle">
+            <p>Hubble Spots Spiral Galaxy 65 Million Light-Years Away</p>
+            <h3>
+              The Hubble Space Telescope has captured stunning images of NGC
+              1300, a barred spiral galaxy with intricate dust lanes and
+              star-forming regions visible in unprecedented detail.
+            </h3>
+          </div>
+          <div class="event-bottom">
+            <div class="bottom-button">Read fill article</div>
+          </div>
+        </div>
+      </div>
+      <div class="card1 card3">
+        <div class="event-pic"></div>
+        <div class="event-content">
+          <div class="event-top">
+            <div class="top-button">Technology</div>
+            <div class="date">October 2, 2025</div>
+          </div>
+          <div class="event-middle">
+            <p>Massive Solar Flare Causes Aurora Visible Worldwide</p>
+            <h3>
+              An X-class solar flare sparked geomagnetic storms, lighting up
+              auroras as far south as Mexico and North Africa, with stunning
+              photos flooding social media.
+            </h3>
+          </div>
+          <div class="event-bottom">
+            <div class="bottom-button">Read fill article</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- === EVENTS SECTION === -->
+    <!-- === FOOTER SECTION === -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col brand">
+          <div class="logo-footer">
+            <img src="images/missions/logo.png" alt="" />
+            <h2>CosmicExplore</h2>
+          </div>
+
+          <p class="p-footer">
+            Discover the wonders of the universe with beginner-friendly
+            astronomy resources.
+          </p>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="images/missions/fb-Link.png" id="fb" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/X-Link.png" id="X" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/missions/insta-Link.png"
+                id="inst"
+                alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/ytb-Link.png" id="ytp" alt="YouTube"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/msg-Link.png" id="messg" alt="Email"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">Celestial Catalogue</a></li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Space Missions</a></li>
+            <li><a href="#">Astrophotography</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="#">Join Community</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Photo Gallery</a></li>
+            <li><a href="#">Contributors</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Beginner Guides</a></li>
+            <li><a href="#">Equipment Reviews</a></li>
+            <li><a href="#">Observation Tips</a></li>
+            <li><a href="#">Sky Calendar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Â© 2025 CosmicExplore. All rights reserved. | Explore the cosmos with
+          wonder.
+        </p>
+      </div>
+    </footer>
+    <!-- === FOOTER SECTION === -->
+  </body>
+</html>
