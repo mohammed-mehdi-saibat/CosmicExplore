@@ -249,7 +249,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('../images/Catalogue/glaxy pic.png');
+    background-image: url('images/Catalogue/glaxy pic.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
