@@ -94,7 +94,7 @@
 
 .GalaxyBox {
 
-    font-family: var(--font-family);
+
     width: 658px;
     height: 562px;
     background-image: url(images/Catalogue/Jupiter.jpg);
@@ -116,6 +116,8 @@
     padding: 0;
     font-size: 40px;
     font-weight: var(--font-bold);
+    font-family: var(--font-family-base);
+
     display: flex;
     justify-content: flex-end;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -123,11 +125,57 @@
 }
 
 .GalaxyBox h2 {
+    font-family: var(--font-family-base);
 
 
     font-size: 36px;
     display: flex;
     justify-content: flex-end;
+    font-weight: var(--font-medium);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.NebulaeBox {
+
+
+    width: 658px;
+    height: 562px;
+    background-image: url(images/Catalogue/Jupiter.jpg);
+    background-position: center;
+    border-radius: 12px;
+    border: 2px solid #FF5900;
+    padding-right: 32px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.NebulaeBox h1 {
+    padding: 0;
+    font-size: 40px;
+    font-weight: var(--font-bold);
+    font-family: var(--font-family-base);
+
+
+
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.NebulaeBox h2 {
+    font-family: var(--font-family-base);
+
+
+    font-size: 36px;
+
+
     font-weight: var(--font-medium);
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -153,6 +201,18 @@
 
 
 }
+
+.left-boxn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
 
 .right-box {
     display: flex;
@@ -264,16 +324,56 @@
     }
 }
 
-.right-textC {
-    display: flex;
-    flex-direction: column;
-
-}
-.galaxy-row{
+.galaxy-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 39px;
+}
+
+.nebulae-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin:50px 100px;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+
+.NebulaeBox {
+
+
+    width: 347.562px;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 2px solid #FF5900;
+    padding-right: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: end;
+    background-position: center;
+    background-size: cover;
+
+
+    h1 {
+        display: flex;
+        font-size: 32px;
+        justify-content: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FF5900;
+    }
+
+    h2 {
+        font-size: 24px;
+        justify-content: center;
+        margin-bottom: 23px;
+
+
+    }
+
 }
 
 .Description {
@@ -294,6 +394,85 @@
     width: 633.014px;
     height: 80px;
 
+}
+
+.n-textblock {
+    background-color: white;
+    width: 347px;
+    height: 290px;
+
+    margin-top: 24px;
+    
+    padding-bottom: 11.26px;
+    font-size: 20px;
+
+
+
+    border-radius: 12px;
+    padding: 0 21px;
+
+    h1 {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: var(--font-family-base);
+    padding-top: 32px;
+
+
+    }
+
+    pre {
+        color: #545454;
+        padding: 2px 0px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: var(--font-family-base);
+
+
+    }
+
+    h3 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        width: 106px;
+        height: 38.735px;
+        background-color: black;
+        align-self: center;
+        margin: 0 auto;
+        /* padding-top: 2px; */
+        border-radius: 12px;
+        font-family: var(--font-family-base);
+
+    }
+
+}
+
+
+
+
+
+.Description-n {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.Description-n p {
+    width: 340px;
+    height: 100px;
+    font-size: 16px;
+    font-family: var(--font-family-base);
+
+}
+
+.Description-n h1 {
+
+    font-size: 26px;
+    font-family: var(--font-family-base);
 }
 
 
@@ -351,9 +530,13 @@
 
     }
 
+    .nebulae-row{
+        justify-content: center;
+    }
 
-
-    .GalaxyBox,.PlanetsBox {
+    .NebulaeBox,
+    .GalaxyBox,
+    .PlanetsBox {
 
 
         width: 347.562px;
@@ -387,6 +570,8 @@
         }
 
     }
+
+
 
     #whitebox {
         justify-content: center;
@@ -440,12 +625,25 @@
 
     }
 
+    .left-boxg {
+        gap: 13px;
+    }
+
+    .left-boxn {
+        gap: 13px;
+    }
+
     .right-textC {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+
+
+    .n-textblock,
+    .g-textblock,
     .textblock {
         /* margin: 52px; */
         background-color: white;
@@ -466,6 +664,7 @@
             color: #000000;
             font-size: 24px;
             font-weight: 500;
+            font-family: var(--font-family-base);
 
 
         }
@@ -475,8 +674,8 @@
             padding: 2px 0px;
             font-size: 20px;
             font-weight: 400;
-            /* width: 318px;
-            height: 180px; */
+            font-family: var(--font-family-base);
+
 
         }
 
@@ -494,25 +693,35 @@
             margin: 0 auto;
             /* padding-top: 2px; */
             border-radius: 12px;
+            font-family: var(--font-family-base);
+
         }
+
     }
 
-
+    .Description-n,
+    .Description-g,
     .Description {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
+    .Description-n p,
+    .Description-g p,
     .Description p {
         width: 340px;
         height: 100px;
-        font-family: Onest;
         font-size: 16px;
+        font-family: var(--font-family-base);
 
     }
 
+    .Description-n h1,
+    .Description-g h1,
     .Description h1 {
-        font-family: Onest;
+
         font-size: 26px;
+        font-family: var(--font-family-base);
     }
 
     .catalogueNav {
