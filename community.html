@@ -2,78 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" >
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Cosmic Explore - Join Our Community</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap"
-        rel="stylesheet" >
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
-    <link rel="stylesheet" href="style.css">
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style_community.css">
 </head>
 
 <body>
     <div class="page-container">
 
-    <header class="navbar">
-        <div class="logo"><img src="./images/Home/Header/Cosmic explore logo.png" alt="logo"></div>
+        <header class="navbar">
+            <div class="logo"><img src="./images/Home/Header/Cosmic explore logo.png" alt="logo"></div>
 
-        <nav class="nav-links">
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Astrophotography.html">Astrophotography</a>
+                <a href="astronomicalNewsEvents.html">Astronomical News </a>
+                <a href="catalogue.html">Catalogue</a>
+                <a href="community.html">Community</a>
+                <a href="missions.html">Missions</a>
+            </nav>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <!-- === SIDEBAR=== -->
+
+        <div class="sidebar">
+            <span class="close-btn">&times;</span>
             <a href="index.html">Home</a>
             <a href="Astrophotography.html">Astrophotography</a>
             <a href="astronomicalNewsEvents.html">Astronomical News </a>
             <a href="catalogue.html">Catalogue</a>
             <a href="community.html">Community</a>
             <a href="missions.html">Missions</a>
-        </nav>
-
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
         </div>
-    </header>
 
-    <!-- === SIDEBAR=== -->
+        <!-- === JS TOGGLE === -->
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const sidebar = document.querySelector(".sidebar");
+            const closeBtn = document.querySelector(".close-btn");
 
-    <div class="sidebar">
-        <span class="close-btn">&times;</span>
-        <a href="#">Home</a>
-        <a href="#">Astrophotography</a>
-        <a href="#">Astronomical News </a>
-        <a href="#">Catalogue</a>
-        <a href="#">Community</a>
-        <a href="#">Missions</a>
-    </div>
+            // Open sidebar
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                sidebar.classList.add("active");
+            });
 
-    <!-- === JS TOGGLE === -->
-    <script>
-        const hamburger = document.querySelector(".hamburger");
-        const sidebar = document.querySelector(".sidebar");
-        const closeBtn = document.querySelector(".close-btn");
-
-        // Open sidebar
-        hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("active");
-            sidebar.classList.add("active");
-        });
-
-        // Close sidebar
-        closeBtn.addEventListener("click", () => {
-            hamburger.classList.remove("active");
-            sidebar.classList.remove("active");
-        });
-
-        // Optional: close sidebar when clicking a link
-        document.querySelectorAll(".sidebar a").forEach(link => {
-            link.addEventListener("click", () => {
+            // Close sidebar
+            closeBtn.addEventListener("click", () => {
                 hamburger.classList.remove("active");
                 sidebar.classList.remove("active");
             });
-        });
-    </script>
 
+            // Optional: close sidebar when clicking a link
+            document.querySelectorAll(".sidebar a").forEach(link => {
+                link.addEventListener("click", () => {
+                    hamburger.classList.remove("active");
+                    sidebar.classList.remove("active");
+                });
+            });
+        </script>
+
+    <!-- <section class="hero-section">
+        <h1>Join Our Amazing Community</h1>
+        <p>Connect with curious minds, share your passion, and grow together. Be part of something bigger.</p>
+        <button class="Community-btn"> Join the Community </button>
+    </section> -->
 
         <main class="main-content">
+
+
+                <section class="hero-section">
+        <h1>Join Our Amazing Community</h1>
+        <p>Connect with curious minds, share your passion, and grow together. Be part of something bigger.</p>
+        <button class="Community-btn"> Join the Community </button>
+                </section>  
+
+
 
 
             <div class="form-container">
@@ -93,58 +107,56 @@
                         <div class="form-fields">
 
                             <div>
-                                <span class="input-span" for="name">Name 
+                                <span class="input-span" for="name">Name
                                     <span style="color: red;">*</span>
                                 </span>
 
-                                <input class="input-field" id="name" name="name" placeholder=" your name"
-                                    type="text" >
+                                <input class="input-field" id="name" name="name" placeholder=" your name" type="text">
                             </div>
                             <div>
-                                <span class="input-span" for="email">Email 
+                                <span class="input-span" for="email">Email
                                     <span style="color: red;">*</span>
                                 </span>
 
                                 <input class="input-field" id="email" name="email" placeholder="your.email@example.com"
-                                    type="email" >
+                                    type="email">
                             </div>
                             <div class="grid-columns">
                                 <div>
                                     <span class="input-span" for="dob">Date of Birth <span
                                             style="color: red;">*</span></span>
-                                    <input class="input-field" id="dob" name="dob" type="date" >
+                                    <input class="input-field" id="dob" name="dob" type="date">
                                 </div>
                                 <div>
                                     <span class="input-span" for="location">Location <span
                                             style="color: red;">*</span></span>
                                     <input class="input-field" id="location" name="location" placeholder="City, Country"
-                                        type="text" >
+                                        type="text">
                                 </div>
                             </div>
                         </div>
 
                     </div>
 
-
                     <div class="form-section">
                         <h2 class="section-title">Experience Level</h2>
                         <div class="radio-options">
                             <span class="radio-option">
-                                <input class="radio-input" name="experience" type="radio" value="beginner" >
+                                <input class="radio-input" name="experience" type="radio" value="beginner">
                                 <div>
                                     <span class="option-title">Beginner</span>
                                     <p class="option-description">Just starting my cosmic journey</p>
                                 </div>
                             </span>
                             <span class="radio-option">
-                                <input class="radio-input" name="experience" type="radio" value="intermediate" >
+                                <input class="radio-input" name="experience" type="radio" value="intermediate">
                                 <div>
                                     <span class="option-title">Intermediate</span>
                                     <p class="option-description">Have some astronomy knowledge</p>
                                 </div>
                             </span>
                             <span class="radio-option">
-                                <input class="radio-input" name="experience" type="radio" value="expert" >
+                                <input class="radio-input" name="experience" type="radio" value="expert">
                                 <div>
                                     <span class="option-title">Expert</span>
                                     <p class="option-description">Experienced astronomer or enthusiast</p>
@@ -159,27 +171,27 @@
                         <p class="interests-description">Select all that apply</p>
                         <div class="interests-grid">
                             <span class="checkbox-option">
-                                <input class="checkbox-input" name="planets" type="checkbox" value="planets" >
+                                <input class="checkbox-input" name="planets" type="checkbox" value="planets">
                                 <span>Planets</span>
                             </span>
                             <span class="checkbox-option">
-                                <input class="checkbox-input" name="planets" type="checkbox" value="stars" >
+                                <input class="checkbox-input" name="planets" type="checkbox" value="stars">
                                 <span>Stars & Constellations</span>
                             </span>
                             <span class="checkbox-option">
-                                <input class="checkbox-input" name="planets" type="checkbox" value="galaxies" >
+                                <input class="checkbox-input" name="planets" type="checkbox" value="galaxies">
                                 <span>Galaxies</span>
                             </span>
                             <span class="checkbox-option">
-                                <input class="checkbox-input" name="planets" type="checkbox" value="black_holes" >
+                                <input class="checkbox-input" name="planets" type="checkbox" value="black_holes">
                                 <span>Black Holes</span>
                             </span>
                             <span class="checkbox-option">
-                                <input class="checkbox-input" name="planets" type="checkbox" value="nebulae" >
+                                <input class="checkbox-input" name="planets" type="checkbox" value="nebulae">
                                 <span>Nebulae</span>
                             </span>
                             <span class="checkbox-option">
-                                <input class="checkbox-input" name="planets" type="checkbox" value="asteroids" >
+                                <input class="checkbox-input" name="planets" type="checkbox" value="asteroids">
                                 <span>Asteroids & Comets</span>
                             </span>
                         </div>
@@ -189,21 +201,21 @@
                         <h2 class="section-title">Subscrioption Plan</h2>
                         <div class="radio-options">
                             <span class="radio-option">
-                                <input class="radio-input" name="experience" type="radio" value="beginner" >
+                                <input class="radio-input" name="experience" type="radio" value="beginner">
                                 <div>
                                     <span class="option-title">free</span>
                                     <p class="option-description">Just starting my cosmic journey</p>
                                 </div>
                             </span>
                             <span class="radio-option">
-                                <input class="radio-input" name="experience" type="radio" value="intermediate" >
+                                <input class="radio-input" name="experience" type="radio" value="intermediate">
                                 <div>
                                     <span class="option-title">Premium</span>
                                     <p class="option-description">Have some astronomy knowledge</p>
                                 </div>
                             </span>
                             <span class="radio-option">
-                                <input class="radio-input" name="experience" type="radio" value="expert" >
+                                <input class="radio-input" name="experience" type="radio" value="expert">
                                 <div>
                                     <span class="option-title">Pro</span>
                                     <p class="option-description">Experienced astronomer or enthusiast</p>
@@ -215,7 +227,9 @@
                     <div class="form-section" style="display: flex; gap: 1rem;">
 
                         <input class="checkbox-input" name="check" type="checkbox" style="margin-top: 2%;">
-                        <h5 class="option-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet laboriosam rem repellendus facilis deserunt alias architecto, impedit quo laborum quidem! Aliquam.</h5>
+                        <h5 class="option-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+                            laboriosam rem repellendus facilis deserunt alias architecto, impedit quo laborum quidem!
+                            Aliquam.</h5>
 
                     </div>
 
@@ -228,6 +242,77 @@
                 </form>
             </div>
         </main>
+
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-col brand">
+                    <div class="logo-footer">
+                        <img src="images/missions/logo.png" alt="" />
+                        <h2>CosmicExplore</h2>
+                    </div>
+
+                    <p class="p-footer">
+                        Discover the wonders of the universe with beginner-friendly
+                        astronomy resources.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/missions/fb-Link.png" id="fb" alt="Facebook" /></a>
+                        <a href="#"><img src="images/missions/X-Link.png" id="X" alt="Twitter" /></a>
+                        <a href="#"><img src="images/missions/insta-Link.png" id="inst" alt="Instagram" /></a>
+                        <a href="#"><img src="images/missions/ytb-Link.png" id="ytp" alt="YouTube" /></a>
+                        <a href="#"><img src="images/missions/msg-Link.png" id="messg" alt="Email" /></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Celestial Catalogue</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">Space Missions</a></li>
+                        <li><a href="#">Astrophotography</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Join Community</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="#">Contributors</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Beginner Guides</a></li>
+                        <li><a href="#">Equipment Reviews</a></li>
+                        <li><a href="#">Observation Tips</a></li>
+                        <li><a href="#">Sky Calendar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © 2025 CosmicExplore. All rights reserved. | Explore the cosmos with
+                    wonder.
+                </p>
+            </div>
+        </footer>
+
     </div>
 </body>
 
