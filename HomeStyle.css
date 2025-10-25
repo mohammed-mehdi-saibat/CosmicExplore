@@ -501,6 +501,90 @@ body {
 }
 
 
+/* Email section */
+.email-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 30px;
+    margin-top: 70px;
+    background-image: url('./images/Home/AstronomyEnthusiasts/webb-tarantula.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 420px;
+    width: 100%;
+    color: white;
+}
+
+.email-section h1 {
+    font-size: var(--mobile-h1);
+    font-weight: var(--font-bold);
+    text-align: center;
+    margin: 0;
+    max-width: 600px;
+}
+
+.email-section p {
+    font-size: var(--mobile-h4);
+    font-weight: var(--font-semibold);
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 500px;
+}
+
+.email-section button {
+    font-size: var(--mobile-h4);
+    font-weight: var(--font-medium);
+    color: white;
+    background-color: #000000;
+    border: #FFFFFF 1px solid;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    margin-top: 16px;
+    padding: 16px 24px;
+    transition: background-color 0.3s ease;
+}
+
+.email-section button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+
+.email-section input {
+  width: 100%;
+  max-width: 500px;
+  padding: 16px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #e0e0ff;
+  font-size: 1.1rem;
+  font-family: inherit;
+  backdrop-filter: blur(12px);
+  outline: none;
+  transition: all 0.3s ease;
+  height: 50px;
+}
+
+.email-section input::placeholder {
+  color: rgba(220, 220, 255, 0.7);
+}
+
+.email-section input:focus {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(180, 180, 255, 0.4);
+}
+
+
+
 @media (min-width: 768px) {
 
     /* Navbar*/
@@ -652,4 +736,38 @@ body {
         font-size: 24px;
         font-weight: var(--font-regular);
     }
+
+    /* Email setion */
+
+    .email-section {
+    align-items: flex-start;
+    height: 400px;
+    }
+    .email-section h1 {
+    font-size: var(--desktop-h1);
+    font-weight: var(--font-bold);
+    text-align: left;
+    margin: 0;
+}
+.email-inline{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 22px;
+    width: 682px;
+}
+
+.email-section button{
+    width: 160px;
+    padding: 16px 24px;;
+    height: 50px;
+    margin: 0;
+}
+
+.email-section p {
+    font-size: var(--desktop-h4);
+    font-weight: var(--font-medium);
+    text-align: left;
+    color: #FFFFFF;
+}
 }
