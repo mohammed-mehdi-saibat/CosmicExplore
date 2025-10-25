@@ -7,26 +7,35 @@
     <title>Home Page</title>
     <!-- Main css file -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="HomeStyle.css">
     <!-- Render All elements normally -->
     <link rel="stylesheet" href="normalize.css">
+
     <!-- Onset font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
-    <!-- === JS TOGGLE === -->
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <!-- === NAVBAR === -->
     <header class="navbar">
-        <div class="logo"><img src="./images/Home/Header/Cosmic explore logo.png" alt="logo"></div>
-        
+        <div class="logo"><img src="./images/Home/Header/Cosmicexplore-logo.png" alt="logo"></div>
+
         <nav class="nav-links">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="Astrophotography.html">Astrophotography</a>
             <a href="astronomicalNewsEvents.html">Astronomical News </a>
-            <a href="#">Catalogue</a>
-            <a href="#">Community</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="community.html">Community</a>
             <a href="missions.html">Missions</a>
         </nav>
         
@@ -41,12 +50,12 @@
     <!-- === SIDEBAR=== -->
     <div class="sidebar">
         <span class="close-btn">&times;</span>
-        <a href="#">Home</a>
-        <a href="#">Astrophotography</a>
+        <a href="index.html">Home</a>
+        <a href="Astrophotography.html">Astrophotography</a>
         <a href="astronomicalNewsEvents.html">Astronomical News </a>
-        <a href="#">Catalogue</a>
+        <a href="catalogue.html">Catalogue</a>
         <a href="community.html">Community</a>
-        <a href="#">Missions</a>
+        <a href="missions.html">Missions</a>
     </div>
     <!-- === SIDEBAR=== -->
 
@@ -67,23 +76,310 @@
             hamburger.classList.remove("active");
             sidebar.classList.remove("active");
         });
-
-        // Optional: close sidebar when clicking a link
-        document.querySelectorAll(".sidebar a").forEach(link => {
-            link.addEventListener("click", () => {
-                hamburger.classList.remove("active");
-                sidebar.classList.remove("active");
-            });
-        });
     </script>
     <!-- === JS TOGGLE === -->
 
     <!-- === HERO SECTION === -->
     <section class="hero-section">
         <h1>Explore the Wonders of
-            the Universe </h1>
-            <p>Your journey through space and time begins here</p>
-        </section>
-    <!-- === HERO SECTION === -->
+            <span>the Universe</span>
+        </h1>
+        <p>Your journey through space and time begins here</p>
+        <button>Start Exploring</button>
+    </section>
+
+    <div class="clestial-object">
+        <div class="left-object">
+            <h1>Celestial Object of the Week</h1>
+            <p>Known as the Red Planet, Mars has long fascinated humanity with its rusty deserts, icy poles, and
+                colossal
+                volcanoes. Scientists believe it may once have had flowing water — and possibly life. Today, robotic
+                explorers like NASA’s Perseverance and Curiosity roam its surface, uncovering clues about its ancient
+                past.
+                With every new discovery, Mars brings us closer to understanding whether it could one day become the
+                next
+                home for humankind.</p>
+            <div class="object-details">
+                <div class="smallcard">
+                    <img src="./images/Home/object/vision-icon.png" alt="vision-icon">
+                    <p>8:30 PM – 12:00 AM</p>
+                </div>
+                <div class="smallcard"><img src="./images/Home/object/destination-icon.png" alt="destinatio-icon">
+                    <p>Southwest, below the
+                        constellation Gemini</p>
+                </div>
+                <div class="smallcard"><img src="./images/Home/object/binacullors.png" alt="binoculars">
+                    <p>Use binoculars to spot Mars’ reddish glow</p>
+                </div>
+            </div>
+        </div>
+        <div class="rightobject"></div>
+    </div>
+
+    <!-- Space Events -->
+    <!-- Orionids Meteor -->
+    <div class="titles">
+        <h1>Space
+            <span>Events</span>
+        </h1>
+    </div>
+
+    <div class="clestial-object orionidscon">
+        <div class="left-object">
+            <h1>Orionids Meteor Shower</h1>
+            <p>Look toward the eastern sky after midnight to witness the Orionids Meteor Shower, one of the most
+                reliable annual displays. Expect up to 20 bright meteors per hour, streaking across the night sky.</p>
+            <div class="object-details">
+                <div class="smallcard">
+                    <img src="./images/Home/object/vision-icon.png" alt="vision-icon">
+                    <p>1:00 AM – 4:00 AM</p>
+                </div>
+
+                <div class="smallcard"><img src="./images/Home/object/calender-icon.png" alt="calender-icon">
+                    <p>October 22–23, 2025</p>
+                </div>
+                <div class="smallcard"><img src="./images/Home/object/destination-icon.png" alt="destinatio-icon">
+                    <p>SClear skies across the Northern Hemisphere</p>
+                </div>
+            </div>
+        </div>
+        <div class="orionids"></div>
+    </div>
+
+    <!-- Lunar Eclipse -->
+    <div class="clestial-object lunareclipse">
+        <div class="left-object">
+            <h1>Partial Lunar Eclipser</h1>
+            <p>On this night, the Moon will partially darken as it passes through Earth’s shadow. The sight of the
+                dimmed, reddish Moon makes it an unforgettable experience for skywatchers.</p>
+            <div class="object-details">
+                <div class="smallcard">
+                    <img src="./images/Home/object/vision-icon.png" alt="vision-icon">
+                    <p>10:45 PM – 12:15 AM</p>
+                </div>
+
+                <div class="smallcard"><img src="./images/Home/object/calender-icon.png" alt="calender-icon">
+                    <p>November 8, 2025</p>
+                </div>
+                <div class="smallcard"><img src="./images/Home/object/destination-icon.png" alt="destinatio-icon">
+                    <p>Visible From Africa, Europe, and Asia</p>
+                </div>
+            </div>
+        </div>
+        <div class="lunar"></div>
+    </div>
+
+    <!-- Latest Disvovery -->
+    <div class="titles">
+        <h1>Latest
+            <span>Discovery</span>
+        </h1>
+    </div>
+
+    <div class="discovery">
+        <div class="disco-card">
+            <img src="./images/Home/object/kepler.png" alt="Kepler">
+            <h1>Kepler-452b</h1>
+            <p>Astronomers have confirmed Kepler-452b, an Earth-like exoplanet 1,400 light-years away in Cygnus. About
+                60% larger than Earth, it orbits a Sun-like star in the habitable zone where liquid water could exist.
+                Dubbed "Earth's older cousin," this discovery suggests potentially habitable worlds may be common in our
+                galaxy.</p>
+        </div>
+        <div class="disco-card">
+            <img src="./images/Home/object/wasp.png" alt="wasp">
+            <h1>WASP-96 b </h1>
+            <p>NASA’s James Webb Space Telescope (JWST) has detected water vapor in the atmosphere of WASP-96 b, a gas
+                giant about 1,150 light-years away.
+                Though not habitable, this “hot Saturn” has provided the clearest-ever spectrum of an exoplanet’s
+                atmosphere — a breakthrough in how we study alien worlds.</p>
+        </div>
+        <div class="disco-card">
+            <img src="./images/Home/object/Jades.png" alt="Jades">
+            <h1>JADES-GS-z14-0 </h1>
+            <p>Using the James Webb Space Telescope, astronomers have detected JADES-GS-z14-0, the most distant and
+                ancient galaxy ever observed — light from it has traveled over 13.4 billion years to reach us.
+                This galaxy formed just 290 million years after the Big Bang, offering a direct glimpse into the infant
+                universe.</p>
+        </div>
+    </div>
+
+    <div class="titles">
+        <h1>Testimonials from
+            <span>Astronomy Enthusiasts</span>
+        </h1>
+    </div>
+
+    <div class="enthusiasts">
+        <div class="person">
+            <img src="./images/Home/AstronomyEnthusiasts/Emma-Laurent.png" alt="Emma laurent">
+            <div class="name-place">
+                <p>Emma Laurent</p>
+                <p>Lyon, France</p>
+            </div>
+            <h1>
+                Amateur Astronomer (5 years)
+            </h1>
+            <p>
+                “Every night, I set up my small telescope on my balcony to catch a glimpse of Mars or Jupiter. Sites
+                like CosmicExplore make me feel connected to something bigger — a global family of stargazers sharing
+                the same wonder.”
+            </p>
+        </div>
+        <div class="person">
+            <img src="./images/Home/AstronomyEnthusiasts/carlos-mendes.png" alt="Carlos mendes">
+            <div class="name-place carlos">
+                <p>Carlos Mendes</p>
+                <p>São Paulo,Brazil</p>
+            </div>
+            <h1>
+                Beginner Stargazer
+            </h1>
+            <p>
+                “I started following meteor showers only last year, and CosmicExplore helped me track my first Perseids.
+                Now I can recognize constellations by name — it’s like learning a new language written in light!”
+            </p>
+        </div>
+        <div class="person">
+            <img src="./images/Home/AstronomyEnthusiasts/Aisha.png" alt="Aisha">
+            <div class="name-place aisha">
+                <p>Aisha Rahman</p>
+                <p>Kuala Lumpur, Malaysia</p>
+            </div>
+            <h1>
+                Student & Space Blogger
+            </h1>
+            <p>
+                “What I love most about astronomy is how it blends science and imagination. Through CosmicExplore, I
+                discovered upcoming space missions and exoplanets — and it fuels my dream of working in astrophysics
+                someday.”
+            </p>
+        </div>
+    </div>
+    <!-- FAQ -->
+    <div class="faq">
+        <h1>
+            FREQUENTLY ASKED
+            QUESTIONS
+        </h1>
+        <p>
+            Lets see what are the most asked questions that people asked with us.
+        </p>
+    </div>
+    <div class="questions">
+        <div class="quest">
+            <p>What exactly is a black hole?</p>
+            <img src="./images/Home/AstronomyEnthusiasts/mynaui_plus.png" alt="plus sign">
+        </div>
+        <div class="quest">
+            <p>What is dark matter, and why can’t we see it?</p>
+            <img src="./images/Home/AstronomyEnthusiasts/mynaui_plus.png" alt="plus sign">
+        </div>
+        <div class="quest">
+            <p>Is there life beyond Earth?</p>
+            <img src="./images/Home/AstronomyEnthusiasts/mynaui_plus.png" alt="plus sign">
+        </div>
+        <div class="quest">
+            <p>How do astronauts prepare for space travel?</p>
+            <img src="./images/Home/AstronomyEnthusiasts/mynaui_plus.png" alt="plus sign">
+        </div>
+        <div class="quest">
+            <p>Why does the Moon look different every night?</p>
+            <img src="./images/Home/AstronomyEnthusiasts/mynaui_plus.png" alt="plus sign">
+        </div>
+        <div class="quest">
+            <p>Why does the Moon look different every night?</p>
+            <img src="./images/Home/AstronomyEnthusiasts/mynaui_plus.png" alt="plus sign">
+        </div>
+    </div>
+
+    <section class="email-section">
+        <h1>Stay informed about cosmic news
+        </h1>
+        <p>Get weekly updates on celestial events, new discoveries, and astronomy tips delivered to your inbox.</p>
+        <div class="email-inline">
+            <input type="email" placeholder="Enter your email" />
+            <button>Subsucribe</button>
+        </div>
+        
+    </section>
+<footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col brand">
+          <div class="logo-footer">
+            <img src="images/missions/logo.png" alt="" />
+            
+          </div>
+
+          <p class="p-footer">
+            Discover the wonders of the universe with beginner-friendly
+            astronomy resources.
+          </p>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="images/missions/fb-Link.png" id="fb" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/X-Link.png"  id="X"alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/insta-Link.png"  id="inst" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/ytb-Link.png" id="ytp" alt="YouTube"
+            /></a>
+            <a href="#"
+              ><img src="images/missions/msg-Link.png" id="messg" alt="Email"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">Celestial Catalogue</a></li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Space Missions</a></li>
+            <li><a href="#">Astrophotography</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="#">Join Community</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Photo Gallery</a></li>
+            <li><a href="#">Contributors</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Beginner Guides</a></li>
+            <li><a href="#">Equipment Reviews</a></li>
+            <li><a href="#">Observation Tips</a></li>
+            <li><a href="#">Sky Calendar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Â© 2025 CosmicExplore. All rights reserved. | Explore the cosmos with
+          wonder.
+        </p>
+      </div>
+    </footer>
 
 </html>

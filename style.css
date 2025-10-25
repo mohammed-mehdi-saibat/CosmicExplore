@@ -1,30 +1,31 @@
 /* Home page */
 /* Global variables */
 :root {
-    --main-color: #020305;
-    --secondary-color: linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%);
-    --background-color: #020305;
-    --font-family: "Onest", sans-serif;
-    --heading-size: 2rem;
+  --main-color: #020305;
+  --secondary-color: #353983;
+    --grdiant-color: linear-gradient(
+    180deg,
+    #595ec1 5%,
+    #353983 45%,
+    #25286c 100%
+  );
+  --background-color: #020305;
+  --font-family: "Onest", sans-serif;
+  --heading-size: 2rem;
+    --body-color:#8D8D8D;
+  
 
     /* === Font Family === */
     --font-family-base: "Onest", sans-serif;
 
     /* === Desktop Typography === */
     --desktop-h1: 4rem;
-    /* Main hero title */
     --desktop-h2: 3rem;
-    /* Section title */
     --desktop-h3: 2rem;
-    /* Subsection title */
     --desktop-h4: 1.5rem;
-    /* Small heading */
     --desktop-h5: 1.25rem;
-    /* Mini heading / label */
     --desktop-body: 1rem;
-    /* Paragraphs */
     --desktop-small: 0.875rem;
-    /* Small text / footer */
 
     /* === Mobile Typography === */
     --mobile-h1: 2.5rem;
@@ -396,19 +397,4 @@ body {
     .hamburger {
         display: flex;
     }
-
-    .hero-section h1 {
-        font-size: var(--mobile-h1);
-    }
-
-    .hero-section p {
-        font-size: var(--mobile-body);
-    }
-
-    /* catalogue */
-    
-    /* catalogue end*/
-
-
-
 }
