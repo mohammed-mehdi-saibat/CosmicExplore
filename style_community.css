@@ -206,7 +206,11 @@ body {
     justify-content: flex-start;
     margin: auto;
     margin-top: 100px;
+<<<<<<< HEAD
     background-image: url('images/Home/Header/image.png');
+=======
+    background-image: url('../images/Home/Header/image.png');
+>>>>>>> cd368151638ca64867b7dbd085319979585149dc
     background-repeat: no-repeat;
     height: 100vh;
     width: 100wh;
