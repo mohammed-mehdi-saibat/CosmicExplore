@@ -133,6 +133,7 @@
     justify-content: flex-end;
     font-weight: var(--font-medium);
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 23px;
 
 }
 
@@ -213,6 +214,139 @@
 
 }
 
+#box2 {
+    background-image: url(/images/Catalogue/Uranus.jpg);
+    background-repeat: no-repeat;
+    border: 2px solid #00BCFF;
+
+}
+
+#box22 {
+    background-image: url(/images/Catalogue/Saturn.jpg);
+    border: 2px solid #FFBB00;
+
+}
+
+#box3 {
+    background-image: url(/images/Catalogue/Earth.jpg);
+    border: 2px solid #0075FF;
+
+}
+
+#box4 {
+    background-image: url(/images/Catalogue/Sirius-01w.jpg);
+    border: 2px solid #004FFF;
+}
+
+#box5 {
+    background-image: url(/images/Catalogue/Betelgeuse-Alpha-Orionis.webp);
+    border: 2px solid #FF8B00;
+    background-position: center;
+    background-size: cover;
+}
+
+#box6 {
+    background-image: url(/images/Catalogue/Polaris.png);
+    border: 2px solid #00DDFF;
+    background-position: center;
+    background-size: cover;
+
+}
+#box7 {
+    background-image: url(/images/Catalogue/MILKY\ WAY.jpeg);
+    border: 2px solid #FFE000;
+    background-position: center;
+    background-size: cover;
+
+}
+#box8 {
+    background-image: url(/images/Catalogue/ANDROMEDA\ GALAXY\ \(M31\).jpeg);
+    border: 2px solid #FF5E00;
+    background-position: center;
+    background-size: cover;
+
+}
+#box9 {
+    background-image: url(/images/Catalogue/SOMBRERO\ GALAXY\ \(M104\).jpeg);
+    border: 2px solid #FF5500;
+    background-position: center;
+    background-size: cover;
+
+}
+#box010 {
+    background-image: url(/images/Catalogue/WHIRLPOOL\ GALAXY\ \(M51\).jpeg);
+    border: 2px solid #00F2FF;
+    background-position: center;
+    background-size: cover;
+
+}
+#box10 {
+    background-image: url(/images/Catalogue/Orion\ nebula.jpeg);
+    border: 2px solid #FF00A2;
+    background-position: center;
+    background-size: cover;
+
+}
+#box11 {
+    background-image: url(/images/Catalogue/CRAB\ NEBULA.jpeg);
+    border: 2px solid #FFC200;
+    background-position: center;
+    background-size: cover;
+
+}
+#box12 {
+    background-image: url(/images/Catalogue/EAGLE\ NEBULA.jpeg);
+    border: 2px solid #FF004E;
+    background-position: center;
+    background-size: cover;
+
+}#box13 {
+    background-image: url(/images/Catalogue/SAGITTARIUS\ A.jpg);
+    border: 2px solid #FF6400;
+    background-position: center;
+    background-size: cover;
+
+}#box14 {
+    background-image: url(/images/Catalogue/CYGNUS\ X-1.jpeg);
+    border: 2px solid #0086FF;
+    background-position: center;
+    background-size: cover;
+
+}#box15 {
+    background-image: url(/images/Catalogue/TON\ 618.webp);
+    border: 2px solid #FF4800;
+    background-position: center;
+    background-size: cover;
+
+}
+#box4text {
+
+    border-radius: 12px;
+    border: 2px solid #FFF;
+    background: var(--linear-sas, linear-gradient(90deg, #686565 0%, #000 35.1%));
+
+    h1 {
+        color: white;
+    }
+
+    pre {
+        color: #D0D0D0;
+        font-size: 20px;
+        font-family: var(--font-regular);
+    }
+
+    h3 {
+
+        background-color: white;
+
+        a {
+            color: black;
+
+        }
+
+
+    }
+}
 
 .right-box {
     display: flex;
@@ -274,6 +408,10 @@
         background-color: black;
         margin-left: auto;
         border-radius: 12px;
+        padding: 10px 23px;
+        margin-bottom: 30px;
+        font-family: var(--font-regular);
+
     }
 }
 
@@ -282,6 +420,7 @@
     background-color: white;
     width: 652.005px;
     height: 351px;
+    font-family: var(--font-regular);
 
     margin-top: 52px;
     font-family: Onest;
@@ -335,7 +474,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin:50px 100px;
+    margin: 50px 100px;
     justify-content: space-around;
     gap: 32px;
 }
@@ -383,16 +522,20 @@
 .Description p {
     width: 500px;
     height: 80px;
+    font-family: var(--font-regular);
 
 }
 
 .Description-g {
     margin-top: 20px;
+    font-family: var(--font-regular);
+
 }
 
 .Description-g p {
     width: 633.014px;
     height: 80px;
+    font-family: var(--font-regular);
 
 }
 
@@ -402,7 +545,7 @@
     height: 290px;
 
     margin-top: 24px;
-    
+
     padding-bottom: 11.26px;
     font-size: 20px;
 
@@ -416,7 +559,7 @@
         font-size: 24px;
         font-weight: 500;
         font-family: var(--font-family-base);
-    padding-top: 32px;
+        padding-top: 32px;
 
 
     }
@@ -530,7 +673,7 @@
 
     }
 
-    .nebulae-row{
+    .nebulae-row {
         justify-content: center;
     }
 
@@ -648,7 +791,7 @@
         /* margin: 52px; */
         background-color: white;
         width: 347px;
-        height: 290px;
+        /* height: 290px; */
 
         margin-top: 24px;
         padding-bottom: 11.26px;
@@ -656,7 +799,7 @@
         font-size: 20px;
 
 
-
+        gap: 0;
         border-radius: 12px;
         padding: 0 21px;
 
@@ -691,6 +834,7 @@
             background-color: black;
             align-self: center;
             margin: 0 auto;
+
             /* padding-top: 2px; */
             border-radius: 12px;
             font-family: var(--font-family-base);
@@ -745,5 +889,144 @@
 
 
     /* catalogue end*/
+
+}
+/*footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.main-footer {
+  background-color: #000000;
+  color: #cfd3e0;
+  padding: 50px 20px 25px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col.brand h2 {
+  color: #9ca8ff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer-col.brand p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #bfc4d9;
+  max-width: 250px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+#fb:hover {
+    box-shadow: rgb(70, 127, 233) 4px -4px 20px ,rgb(70, 127, 233) -4px 4px 20px;
+}
+
+#X:hover {
+    box-shadow: rgb(0, 0, 0) 4px -4px 20px ,rgb(0, 0, 0) -4px 4px 20px;
+}
+
+#inst:hover {
+    box-shadow: rgb(216, 90, 174) 4px -4px 20px ,rgb(206, 39, 39) -4px 4px 20px;
+}
+
+#ytp:hover {
+    box-shadow: rgb(221, 17, 17) 4px -4px 20px ,rgb(247, 16, 16) -4px 4px 20px;
+}
+
+#messg:hover {
+    box-shadow: rgb(70, 127, 233) 4px -4px 20px ,rgb(70, 127, 233) -4px 4px 20px;
+}
+
+/* Footer Columns */
+
+.logo-footer{
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.logo-footer img{
+  width: 55px;
+  height: 55px;
+}
+.footer-col h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin: 5px 0;
+}
+
+.footer-col ul li a {
+  color: #cfd3e0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.7s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #9ca8ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #2a2d3a;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #8a90a5;
+}
+
+@media (min-width: 768px) {
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-col {
+    flex: 1;
+  }
+
+  .footer-col.brand {
+    flex: 1.5;
+  }
 
 }
