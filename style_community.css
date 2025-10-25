@@ -206,7 +206,7 @@ body {
     justify-content: flex-start;
     margin: auto;
     margin-top: 100px;
-    background-image: url('images\Home\Header\image.png');
+    background-image: url('images/Home/Header/image.png');
     background-repeat: no-repeat;
     height: 100vh;
     width: 100wh;
@@ -268,7 +268,7 @@ body {
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background-image: url('images\Home\Header\image.png');
+    background-image: url('images/Home/Header/image.png');
     background-attachment: fixed;
     line-height: 1.5;
 }
