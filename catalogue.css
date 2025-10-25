@@ -62,7 +62,7 @@
     font-family: var(--font-family);
     width: 766px;
     height: 562px;
-    background-image: url(../images/Catalogue/Jupiter.jpg);
+    background-image: url(./images/Catalogue/Jupiter.jpg);
     border-radius: 12px;
     border: 2px solid #FF5900;
     padding-right: 32px;
@@ -98,7 +98,7 @@
 
     width: 658px;
     height: 562px;
-    background-image: url(../images/Catalogue/Jupiter.jpg);
+    background-image: url(./images/Catalogue/Jupiter.jpg);
     background-position: center;
     border-radius: 12px;
     border: 2px solid #FF5900;
@@ -144,7 +144,7 @@
 
     width: 658px;
     height: 562px;
-    background-image: url(../images/Catalogue/Jupiter.jpg);
+    background-image: url(./images/Catalogue/Jupiter.jpg);
     background-position: center;
     border-radius: 12px;
     border: 2px solid #FF5900;
@@ -216,59 +216,59 @@
 }
 
 #box2 {
-    background-image: url(../images/Catalogue/Uranus.jpg);
+    background-image: url(./images/Catalogue/Uranus.jpg);
     background-repeat: no-repeat;
     border: 2px solid #00BCFF;
 
 }
 
 #box22 {
-    background-image: url(../images/Catalogue/Saturn.jpg);
+    background-image: url(./images/Catalogue/Saturn.jpg);
     border: 2px solid #FFBB00;
 
 }
 
 #box3 {
-    background-image: url(../images/Catalogue/Earth.jpg);
+    background-image: url(./images/Catalogue/Earth.jpg);
     border: 2px solid #0075FF;
 
 }
 
 #box4 {
-    background-image: url(../images/Catalogue/Sirius-01w.jpg);
+    background-image: url(./images/Catalogue/Sirius-01w.jpg);
     border: 2px solid #004FFF;
 }
 
 #box5 {
-    background-image: url(../images/Catalogue/Betelgeuse-Alpha-Orionis.webp);
+    background-image: url(./images/Catalogue/Betelgeuse-Alpha-Orionis.webp);
     border: 2px solid #FF8B00;
     background-position: center;
     background-size: cover;
 }
 
 #box6 {
-    background-image: url(../images/Catalogue/Polaris.png);
+    background-image: url(./images/Catalogue/Polaris.png);
     border: 2px solid #00DDFF;
     background-position: center;
     background-size: cover;
 
 }
 #box7 {
-    background-image: url(../images/Catalogue/MILKY\ WAY.jpeg);
+    background-image: url(./images/Catalogue/MILKY\ WAY.jpeg);
     border: 2px solid #FFE000;
     background-position: center;
     background-size: cover;
 
 }
 #box8 {
-    background-image: url(../images/Catalogue/ANDROMEDA\ GALAXY\ \(M31\).jpeg);
+    background-image: url(./images/Catalogue/ANDROMEDA\ GALAXY\ \(M31\).jpeg);
     border: 2px solid #FF5E00;
     background-position: center;
     background-size: cover;
 
 }
 #box9 {
-    background-image: url(../images/Catalogue/SOMBRERO\ GALAXY\ \(M104\).jpeg);
+    background-image: url(./images/Catalogue/SOMBRERO\ GALAXY\ \(M104\).jpeg);
     border: 2px solid #FF5500;
     background-position: center;
     background-size: cover;
@@ -282,39 +282,39 @@
 
 }
 #box10 {
-    background-image: url(../images/Catalogue/Orion\ nebula.jpeg);
+    background-image: url(./images/Catalogue/Orion\ nebula.jpeg);
     border: 2px solid #FF00A2;
     background-position: center;
     background-size: cover;
 
 }
 #box11 {
-    background-image: url(../images/Catalogue/CRAB\ NEBULA.jpeg);
+    background-image: url(./images/Catalogue/CRAB\ NEBULA.jpeg);
     border: 2px solid #FFC200;
     background-position: center;
     background-size: cover;
 
 }
 #box12 {
-    background-image: url(../images/Catalogue/EAGLE\ NEBULA.jpeg);
+    background-image: url(./images/Catalogue/EAGLE\ NEBULA.jpeg);
     border: 2px solid #FF004E;
     background-position: center;
     background-size: cover;
 
 }#box13 {
-    background-image: url(../images/Catalogue/SAGITTARIUS\ A.jpg);
+    background-image: url(./images/Catalogue/SAGITTARIUS\ A.jpg);
     border: 2px solid #FF6400;
     background-position: center;
     background-size: cover;
 
 }#box14 {
-    background-image: url(../images/Catalogue/CYGNUS\ X-1.jpeg);
+    background-image: url(./images/Catalogue/CYGNUS\ X-1.jpeg);
     border: 2px solid #0086FF;
     background-position: center;
     background-size: cover;
 
 }#box15 {
-    background-image: url(../images/Catalogue/TON\ 618.webp);
+    background-image: url(./images/Catalogue/TON\ 618.webp);
     border: 2px solid #FF4800;
     background-position: center;
     background-size: cover;
