@@ -1,0 +1,1032 @@
+* {
+    color: white;
+    font-family: "Onest", sans-serif;
+}
+
+:root {
+    --main-color: #020305;
+    --secondary-color: linear-gradient(180deg, #595EC1 5%, #353983 45%, #25286C 100%);
+    --background-color: #020305;
+    --font-family: "Onest", sans-serif;
+    --heading-size: 2rem;
+
+    /* === Font Family === */
+    --font-family-base: "Onest", sans-serif;
+
+    /* === Desktop Typography === */
+    --desktop-h1: 4rem;
+    /* Main hero title */
+    --desktop-h2: 3rem;
+    /* Section title */
+    --desktop-h3: 2rem;
+    /* Subsection title */
+    --desktop-h4: 1.5rem;
+    /* Small heading */
+    --desktop-h5: 1.25rem;
+    /* Mini heading / label */
+    --desktop-body: 1rem;
+    /* Paragraphs */
+    --desktop-small: 0.875rem;
+    /* Small text / footer */
+
+    /* === Mobile Typography === */
+    --mobile-h1: 2.5rem;
+    --mobile-h2: 2rem;
+    --mobile-h3: 1.5rem;
+    --mobile-h4: 1.25rem;
+    --mobile-h5: 1.125rem;
+    --mobile-body: 0.95rem;
+    --mobile-small: 0.8rem;
+
+    /* === Font Weights === */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+.PlanetsBox {
+
+    font-family: var(--font-family);
+    width: 766px;
+    height: 562px;
+    background-image: url(images/Catalogue/Jupiter.jpg);
+    border-radius: 12px;
+    border: 2px solid #FF5900;
+    padding-right: 32px;
+    margin: 30px 0;
+
+
+
+}
+
+.PlanetsBox h1 {
+    padding: 0;
+    font-size: 55px;
+    font-weight: var(--font-bold);
+    display: flex;
+    justify-content: flex-end;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.PlanetsBox h2 {
+
+
+    font-size: 48px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: var(--font-medium);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.GalaxyBox {
+
+
+    width: 658px;
+    height: 562px;
+    background-image: url(images/Catalogue/Jupiter.jpg);
+    background-position: center;
+    border-radius: 12px;
+    border: 2px solid #FF5900;
+    padding-right: 32px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.GalaxyBox h1 {
+    padding: 0;
+    font-size: 40px;
+    font-weight: var(--font-bold);
+    font-family: var(--font-family-base);
+
+    display: flex;
+    justify-content: flex-end;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.GalaxyBox h2 {
+    font-family: var(--font-family-base);
+
+
+    font-size: 36px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: var(--font-medium);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 23px;
+
+}
+
+
+.NebulaeBox {
+
+
+    width: 658px;
+    height: 562px;
+    background-image: url(images/Catalogue/Jupiter.jpg);
+    background-position: center;
+    border-radius: 12px;
+    border: 2px solid #FF5900;
+    padding-right: 32px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.NebulaeBox h1 {
+    padding: 0;
+    font-size: 40px;
+    font-weight: var(--font-bold);
+    font-family: var(--font-family-base);
+
+
+
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.NebulaeBox h2 {
+    font-family: var(--font-family-base);
+
+
+    font-size: 36px;
+
+
+    font-weight: var(--font-medium);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.left-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 54px;
+
+
+
+}
+
+.left-boxg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.left-boxn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#box2 {
+    background-image: url(/images/Catalogue/Uranus.jpg);
+    background-repeat: no-repeat;
+    border: 2px solid #00BCFF;
+
+}
+
+#box22 {
+    background-image: url(/images/Catalogue/Saturn.jpg);
+    border: 2px solid #FFBB00;
+
+}
+
+#box3 {
+    background-image: url(/images/Catalogue/Earth.jpg);
+    border: 2px solid #0075FF;
+
+}
+
+#box4 {
+    background-image: url(/images/Catalogue/Sirius-01w.jpg);
+    border: 2px solid #004FFF;
+}
+
+#box5 {
+    background-image: url(/images/Catalogue/Betelgeuse-Alpha-Orionis.webp);
+    border: 2px solid #FF8B00;
+    background-position: center;
+    background-size: cover;
+}
+
+#box6 {
+    background-image: url(/images/Catalogue/Polaris.png);
+    border: 2px solid #00DDFF;
+    background-position: center;
+    background-size: cover;
+
+}
+#box7 {
+    background-image: url(/images/Catalogue/MILKY\ WAY.jpeg);
+    border: 2px solid #FFE000;
+    background-position: center;
+    background-size: cover;
+
+}
+#box8 {
+    background-image: url(/images/Catalogue/ANDROMEDA\ GALAXY\ \(M31\).jpeg);
+    border: 2px solid #FF5E00;
+    background-position: center;
+    background-size: cover;
+
+}
+#box9 {
+    background-image: url(/images/Catalogue/SOMBRERO\ GALAXY\ \(M104\).jpeg);
+    border: 2px solid #FF5500;
+    background-position: center;
+    background-size: cover;
+
+}
+#box010 {
+    background-image: url(/images/Catalogue/WHIRLPOOL\ GALAXY\ \(M51\).jpeg);
+    border: 2px solid #00F2FF;
+    background-position: center;
+    background-size: cover;
+
+}
+#box10 {
+    background-image: url(/images/Catalogue/Orion\ nebula.jpeg);
+    border: 2px solid #FF00A2;
+    background-position: center;
+    background-size: cover;
+
+}
+#box11 {
+    background-image: url(/images/Catalogue/CRAB\ NEBULA.jpeg);
+    border: 2px solid #FFC200;
+    background-position: center;
+    background-size: cover;
+
+}
+#box12 {
+    background-image: url(/images/Catalogue/EAGLE\ NEBULA.jpeg);
+    border: 2px solid #FF004E;
+    background-position: center;
+    background-size: cover;
+
+}#box13 {
+    background-image: url(/images/Catalogue/SAGITTARIUS\ A.jpg);
+    border: 2px solid #FF6400;
+    background-position: center;
+    background-size: cover;
+
+}#box14 {
+    background-image: url(/images/Catalogue/CYGNUS\ X-1.jpeg);
+    border: 2px solid #0086FF;
+    background-position: center;
+    background-size: cover;
+
+}#box15 {
+    background-image: url(/images/Catalogue/TON\ 618.webp);
+    border: 2px solid #FF4800;
+    background-position: center;
+    background-size: cover;
+
+}
+#box4text {
+
+    border-radius: 12px;
+    border: 2px solid #FFF;
+    background: var(--linear-sas, linear-gradient(90deg, #686565 0%, #000 35.1%));
+
+    h1 {
+        color: white;
+    }
+
+    pre {
+        color: #D0D0D0;
+        font-size: 20px;
+        font-family: var(--font-regular);
+    }
+
+    h3 {
+
+        background-color: white;
+
+        a {
+            color: black;
+
+        }
+
+
+    }
+}
+
+.right-box {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 54px;
+
+
+
+
+
+}
+
+.planet-boxs {
+    gap: 32px;
+}
+
+.textblock {
+    /* margin: 52px; */
+    background-color: white;
+    width: 515px;
+    height: 351px;
+
+    margin-top: 52px;
+    font-family: Onest;
+    font-size: 20px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    padding: 0 25px;
+    border-radius: 12px;
+
+    h1 {
+        color: #000000;
+        font-family: Onest;
+        font-size: 32px;
+        font-weight: var(--font-regular);
+    }
+
+    pre {
+        color: #545454;
+        padding: 5px 0;
+        line-height: 152.006%;
+        font-family: Onest;
+        font-weight: var(--font-regular);
+
+    }
+
+    h3 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        width: 134px;
+        height: 53px;
+        background-color: black;
+        margin-left: auto;
+        border-radius: 12px;
+        padding: 10px 23px;
+        margin-bottom: 30px;
+        font-family: var(--font-regular);
+
+    }
+}
+
+.g-textblock {
+    /* margin: 52px; */
+    background-color: white;
+    width: 652.005px;
+    height: 351px;
+    font-family: var(--font-regular);
+
+    margin-top: 52px;
+    font-family: Onest;
+    font-size: 20px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    padding: 0 25px;
+    border-radius: 12px;
+
+    h1 {
+        color: #000000;
+        font-family: Onest;
+        font-size: 32px;
+        font-weight: var(--font-regular);
+    }
+
+    pre {
+        color: #545454;
+        padding: 5px 0;
+        line-height: 152.006%;
+        font-family: Onest;
+        font-weight: var(--font-regular);
+
+    }
+
+    h3 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        width: 134px;
+        height: 53px;
+        background-color: black;
+        margin-left: auto;
+        border-radius: 12px;
+    }
+}
+
+.galaxy-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 39px;
+}
+
+.nebulae-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin: 50px 100px;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+
+.NebulaeBox {
+
+
+    width: 347.562px;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 2px solid #FF5900;
+    padding-right: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: end;
+    background-position: center;
+    background-size: cover;
+
+
+    h1 {
+        display: flex;
+        font-size: 32px;
+        justify-content: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FF5900;
+    }
+
+    h2 {
+        font-size: 24px;
+        justify-content: center;
+        margin-bottom: 23px;
+
+
+    }
+
+}
+
+.Description {
+    margin-top: 20px;
+}
+
+.Description p {
+    width: 500px;
+    height: 80px;
+    font-family: var(--font-regular);
+
+}
+
+.Description-g {
+    margin-top: 20px;
+    font-family: var(--font-regular);
+
+}
+
+.Description-g p {
+    width: 633.014px;
+    height: 80px;
+    font-family: var(--font-regular);
+
+}
+
+.n-textblock {
+    background-color: white;
+    width: 347px;
+    height: 290px;
+
+    margin-top: 24px;
+
+    padding-bottom: 11.26px;
+    font-size: 20px;
+
+
+
+    border-radius: 12px;
+    padding: 0 21px;
+
+    h1 {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: var(--font-family-base);
+        padding-top: 32px;
+
+
+    }
+
+    pre {
+        color: #545454;
+        padding: 2px 0px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: var(--font-family-base);
+
+
+    }
+
+    h3 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        width: 106px;
+        height: 38.735px;
+        background-color: black;
+        align-self: center;
+        margin: 0 auto;
+        /* padding-top: 2px; */
+        border-radius: 12px;
+        font-family: var(--font-family-base);
+
+    }
+
+}
+
+
+
+
+
+.Description-n {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.Description-n p {
+    width: 340px;
+    height: 100px;
+    font-size: 16px;
+    font-family: var(--font-family-base);
+
+}
+
+.Description-n h1 {
+
+    font-size: 26px;
+    font-family: var(--font-family-base);
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    /* catalogue */
+    .h-section-catalogue {
+        /* background-attachment: scroll; */
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 80px 0px;
+        gap: 20px;
+
+
+        h1 {
+            font-size: 48px;
+            font-weight: var(--font-semibold);
+
+
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: var(--font-regular);
+            text-align: center;
+            padding: 0 31px;
+
+        }
+    }
+
+    .catalogueNav {
+        display: none;
+    }
+
+    .CatalogueTitles {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+        padding: 1px;
+        gap: 5px;
+
+    }
+
+    .CatalogueTitles img {
+        width: 31px;
+        height: 31px;
+    }
+
+    .CatalogueTitles h1 {
+        font-size: 24px;
+
+    }
+
+    .nebulae-row {
+        justify-content: center;
+    }
+
+    .NebulaeBox,
+    .GalaxyBox,
+    .PlanetsBox {
+
+
+        width: 347.562px;
+        height: 255px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        border: 2px solid #FF5900;
+        padding-right: 0px;
+        margin: 0px;
+        align-items: center;
+        justify-content: end;
+        background-position: center;
+        background-size: cover;
+
+
+        h1 {
+            display: flex;
+            font-size: 32px;
+            justify-content: center;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #FF5900;
+        }
+
+        h2 {
+            font-size: 24px;
+            justify-content: center;
+            margin-bottom: 23px;
+
+
+        }
+
+    }
+
+
+
+    #whitebox {
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .planet-boxs {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+
+        margin: 0px 0;
+
+    }
+
+    .h-section-catalogue {
+        /* background-attachment: scroll; */
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 80px 0px;
+        gap: 20px;
+
+
+        h1 {
+            font-size: 48px;
+            font-weight: var(--font-semibold);
+
+
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: var(--font-regular);
+            text-align: center;
+            padding: 0 31px;
+
+        }
+    }
+
+    .left-box {
+
+        gap: 13px;
+
+    }
+
+    .right-box {
+
+        gap: 13px;
+
+    }
+
+    .left-boxg {
+        gap: 13px;
+    }
+
+    .left-boxn {
+        gap: 13px;
+    }
+
+    .right-textC {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .n-textblock,
+    .g-textblock,
+    .textblock {
+        /* margin: 52px; */
+        background-color: white;
+        width: 347px;
+        /* height: 290px; */
+
+        margin-top: 24px;
+        padding-bottom: 11.26px;
+
+        font-size: 20px;
+
+
+        gap: 0;
+        border-radius: 12px;
+        padding: 0 21px;
+
+        h1 {
+            color: #000000;
+            font-size: 24px;
+            font-weight: 500;
+            font-family: var(--font-family-base);
+
+
+        }
+
+        pre {
+            color: #545454;
+            padding: 2px 0px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: var(--font-family-base);
+
+
+        }
+
+        h3 {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            width: 106px;
+            height: 38.735px;
+            background-color: black;
+            align-self: center;
+            margin: 0 auto;
+
+            /* padding-top: 2px; */
+            border-radius: 12px;
+            font-family: var(--font-family-base);
+
+        }
+
+    }
+
+    .Description-n,
+    .Description-g,
+    .Description {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Description-n p,
+    .Description-g p,
+    .Description p {
+        width: 340px;
+        height: 100px;
+        font-size: 16px;
+        font-family: var(--font-family-base);
+
+    }
+
+    .Description-n h1,
+    .Description-g h1,
+    .Description h1 {
+
+        font-size: 26px;
+        font-family: var(--font-family-base);
+    }
+
+    .catalogueNav {
+        display: none;
+    }
+
+    .CatalogueTitles {
+        display: flex;
+        justify-content: center;
+    }
+
+    .CatalogueTitles img {
+        width: 31px;
+        height: 31px;
+    }
+
+    .CatalogueTitles h1 {
+        font-size: 24px;
+
+    }
+
+
+    /* catalogue end*/
+
+}
+/*footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.main-footer {
+  background-color: #000000;
+  color: #cfd3e0;
+  padding: 50px 20px 25px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col.brand h2 {
+  color: #9ca8ff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer-col.brand p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #bfc4d9;
+  max-width: 250px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+#fb:hover {
+    box-shadow: rgb(70, 127, 233) 4px -4px 20px ,rgb(70, 127, 233) -4px 4px 20px;
+}
+
+#X:hover {
+    box-shadow: rgb(0, 0, 0) 4px -4px 20px ,rgb(0, 0, 0) -4px 4px 20px;
+}
+
+#inst:hover {
+    box-shadow: rgb(216, 90, 174) 4px -4px 20px ,rgb(206, 39, 39) -4px 4px 20px;
+}
+
+#ytp:hover {
+    box-shadow: rgb(221, 17, 17) 4px -4px 20px ,rgb(247, 16, 16) -4px 4px 20px;
+}
+
+#messg:hover {
+    box-shadow: rgb(70, 127, 233) 4px -4px 20px ,rgb(70, 127, 233) -4px 4px 20px;
+}
+
+/* Footer Columns */
+
+.logo-footer{
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.logo-footer img{
+  width: 55px;
+  height: 55px;
+}
+.footer-col h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin: 5px 0;
+}
+
+.footer-col ul li a {
+  color: #cfd3e0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.7s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #9ca8ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #2a2d3a;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #8a90a5;
+}
+
+@media (min-width: 768px) {
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-col {
+    flex: 1;
+  }
+
+  .footer-col.brand {
+    flex: 1.5;
+  }
+
+}
