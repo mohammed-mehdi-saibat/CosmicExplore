@@ -209,9 +209,9 @@ body {
     background-image: url('images/Catalogue/EAGLE\ NEBULA.jpeg');
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100wh;
     color: white;
     border-radius: var(--radius);
+    background-size: cover;
 
 }
 
